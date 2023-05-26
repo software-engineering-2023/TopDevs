@@ -1,22 +1,7 @@
-function getSelectedValue(){
 
-    let dropdown = document.getElementById("id-list");
-    let val = dropdown.value;
-
-    console.log(val);
-}
-
-function alertMe(event){
-    alert("Hi");
-}
-
-function createForm(){
-    
-}
 
 function onRegBtn(){
     var success = verifyInputs();
-
 
     if(success){
         event.preventDefault();
@@ -63,11 +48,6 @@ function onDropdownChange(){
 
 }
 
-function insertAtIndex(parentElement, newElement, index) {
-    var referenceElement = parentElement.children[index];
-    parentElement.insertBefore(newElement, referenceElement);
-}
-
 function createRegInputDiv(id, type, name){
     var input = document.createElement("input");
     input.id = id;
@@ -76,10 +56,14 @@ function createRegInputDiv(id, type, name){
     // input.className = "input-full-width glow";
 
     var div = document.createElement("div");
-    div.className = "input-full-width glow";
+    div.className = "glow";
     div.appendChild(input);
 
-    return div;
+    var bigDiv = document.createElement('div');
+    bigDiv.className = "input-full-width";
+    bigDiv.appendChild(div);
+
+    return bigDiv;
 }
 
 function verifyInputs(){
@@ -89,17 +73,31 @@ function verifyInputs(){
     var success = true;
 
     for(i = 0; i < inputsDiv.children.length; i++){
-        currDiv = inputsDiv.children[i];
-        currInput = currDiv.children[0];
+        bigDiv = inputsDiv.children[i];
+        smallDiv = bigDiv.children[0];
+        currInput = smallDiv.children[0];
         
         if(currInput.value === ""){
+
+            success = false;
+
+            if(bigDiv.children.length > 1)
+                continue;            
+
             var par = document.createElement("p");
             par.style = "color: red;";
             par.textContent = "Please fill out required fields";
-            currDiv.appendChild(par);
-            success = false;
+            bigDiv.appendChild(par);
+        }else{
+            if(bigDiv.children.length > 1)
+                bigDiv.removeChild(bigDiv.children[1]);
         }
     }    
 
     return success;
+}
+
+function insertAtIndex(parentElement, newElement, index) {
+    var referenceElement = parentElement.children[index];
+    parentElement.insertBefore(newElement, referenceElement);
 }
