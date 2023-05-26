@@ -27,17 +27,17 @@
         <div class="container">
             <div class="col-lg-5 offset-lg-2">
                 <div class="hero__form">
-                    <h3>How much do you need</h3>
+                    <h3>Login</h3>
                     <form action="#">
                         <div class="input-list">
                             <div class="input-full-width">
                                 <!-- <p>Username:</p> -->
-                                <input type="text" placeholder="Username">
+                                <input type="text" id="username" placeholder="Username">
                             </div>
 
                             <div class="input-full-width">
                                 <!-- <p>Password:</p> -->
-                                <input type="password" placeholder="Password">
+                                <input type="password" id="password" placeholder="Password">
                             </div>
 
                             <!-- <div class="input-list">
@@ -50,17 +50,21 @@
                                 </div>
                                 
                             </div> -->
-            
-                        <div class="input-list-item">
-                            <a href="index.html"> Register for a new account </a>
+
+                        <div id="logindiv" style="width: 100%;">
                         </div>
 
-                        <button type="submit" class="site-btn">Sign in</button>
+                        <div class="input-list-item" style="width: 100%;">
+                            <a href="register.html"> Register for a new account </a>
+                        </div>
+
+                        <button class="site-btn" onclick= "onLogin()">Sign in</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
+    <script src="js/login.js"></script>
     
 </body>
 </html>
