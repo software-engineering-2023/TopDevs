@@ -28,12 +28,20 @@
     color: #230871;;
 }
 
+
+
 .small-text{
     color: black;
 }
 
+a.med-title{
+    transition: all 0.2s ease;
+}
+
 a.med-title:hover{
-    color: #47415c;
+    color: #482ac0;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .small-title{
@@ -99,6 +107,14 @@ a.med-title:hover{
     background-color: bisque;
 }
 
+.yellow{
+    background-color: yellow;
+}
+
+.orange{
+    background-color: orange;
+}
+
 .border-inputs{
     border: 2px solid; 
     border-color: rgba(162, 162, 162, 0.4); 
@@ -106,3 +122,17 @@ a.med-title:hover{
     border-radius: 4px;
 }
 
+.calign-l{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+
+.grow{
+    transition: transform 0.3s ease;
+}
+
+.grow:hover{
+    transform: scale(1.1);
+}
