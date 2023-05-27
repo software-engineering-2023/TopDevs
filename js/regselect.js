@@ -5,7 +5,7 @@ function onRegBtn(){
 
     if(success){
         event.preventDefault();
-        window.location.href = "../index.html";
+        window.location.href = "./index.html";
     }    
 
 }
@@ -37,7 +37,6 @@ function onDropdownChange(){
         inputsDiv.appendChild(confirmPasswordDiv);
 
     }else if(value === 'new'){
-
         inputsDiv.appendChild(nidDiv);
         inputsDiv.appendChild(usernameDiv);
         inputsDiv.appendChild(passwordDiv);
@@ -53,6 +52,7 @@ function createRegInputDiv(id, type, name){
     input.id = id;
     input.type = type;
     input.placeholder = name;
+    // input.required = true;
     // input.className = "input-full-width glow";
 
     var div = document.createElement("div");

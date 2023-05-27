@@ -1,0 +1,152 @@
+
+.types-container {
+    align-items: center;
+    display: flex;
+    align-items: center;
+    
+  }
+  
+  .types-container h6 {
+    color: #212529;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-left: 3px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .contact__form {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Updated width */
+    margin: 0 auto;
+  }
+
+  .contact__form__title {
+    text-align: center;
+  }
+  
+  .contact__form__title h2 {
+    font-size: 24px;
+    color: #230871;
+    margin-bottom: 10px;
+  }
+  
+  .contact__form__title p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .contact__form .types-container {
+    margin-bottom: 20px;
+  }
+  
+  .contact__form .types-container h6 {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .contact__form .types-container select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .contact__form .input-list {
+    margin-bottom: 20px;
+  }
+  
+  .contact__form .input-list input[type="text"],
+  .contact__form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 14px;
+  }
+  
+  .contact__form textarea {
+    height: 120px;
+  }
+  
+  .contact__form #messageContainer {
+    margin-bottom: 20px;
+  }
+  
+  .contact__form .message,
+  .contact__form .error {
+    font-size: 14px;
+  }
+  
+  .contact__form .message {
+    color: green;
+  }
+  
+  .contact__form .error {
+    color: red;
+  }
+  
+  .contact__form button[type="submit"] {
+    background-color: #230871;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact__form button[type="submit"]:hover {
+    background-color: #1a064b;
+  }
+
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-list input[type="text"]:focus,
+#cardDetails input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #1a064b;
+    box-shadow: 0 0 5px #1a064b;
+}
+
+.input-list input[type="text"]::placeholder,
+#cardDetails input[type="text"]::placeholder,
+textarea::placeholder {
+    color: #aaa;
+}
+
+.input-list input[type="text"]:focus::placeholder,
+#cardDetails input[type="text"]:focus::placeholder,
+textarea:focus::placeholder {
+    color: #1a064b;
+}
+
+.input-list input[type="text"]:hover,
+#cardDetails input[type="text"]:hover,
+textarea:hover {
+    border-color: #1a064b;
+    box-shadow: 0 0 5px #1a064b;
+}
+
+.input-list input[type="text"]:hover::placeholder,
+#cardDetails input[type="text"]:hover::placeholder,
+textarea:hover::placeholder {
+    color: #1a064b;
+}
