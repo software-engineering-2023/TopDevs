@@ -37,7 +37,6 @@ function onDropdownChange(){
         inputsDiv.appendChild(confirmPasswordDiv);
 
     }else if(value === 'new'){
-
         inputsDiv.appendChild(nidDiv);
         inputsDiv.appendChild(usernameDiv);
         inputsDiv.appendChild(passwordDiv);
