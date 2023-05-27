@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Loanday Template">
+        <meta name="keywords" content="Loanday, unica, creative, html">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>FOMSY</title>
+
+        <!-- Google Font -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+        <!-- Css Styles -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+        <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+        <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+        <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+
+        <style>
+            .form-row {
+                display: flex;
+            }
+
+            .form-group {
+                flex: 1;
+                margin-right: 10px;
+            }
+
+            .form-group:last-child {
+                margin-right: 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Page Preloder -->
+        <form>
+            <div class="form-row">
+                <div class="input-list">
+                    <label for="textbox1">Textbox 1:</label>
+                    <input type="text" id="textbox1" name="textbox1">
+                </div>
+
+                <div class="form-group">
+                    <label for="textbox2">Textbox 2:</label>
+                    <input type="text" id="textbox2" name="textbox2">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="textbox3">Textbox 3:</label>
+                    <input type="text" id="textbox3" name="textbox3">
+                </div>
+                <div class="form-group">
+                    <label for="textbox4">Textbox 4:</label>
+                    <input type="text" id="textbox4" name="textbox4">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="textbox5">Textbox 5:</label>
+                    <input type="text" id="textbox5" name="textbox5">
+                </div>
+                <div class="form-group">
+                    <label for="textbox6">Textbox 6:</label>
+                    <input type="text" id="textbox6" name="textbox6">
+                </div>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            let prevScrollPos = window.pageYOffset;
+            const navbar = document.getElementById('navbar');
+            const pageHeight = document.documentElement.scrollHeight;
+            const scrollThreshold = pageHeight * 0.25; // Adjust the threshold as needed
+
+            window.onscroll = function () {
+                const currentScrollPos = window.pageYOffset;
+
+                if (currentScrollPos < pageHeight) {
+                    navbar.style.top = "-160px"; // Adjust this value to match the height of your navbar
+                }
+
+
+                // Check if the user has scrolled to the top of the page
+                if (currentScrollPos === 0) {
+                    navbar.style.top = "0";
+                }
+
+                prevScrollPos = currentScrollPos;
+            };
+        </script>
+    </body>
+
+</html>
