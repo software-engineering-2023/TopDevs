@@ -52,6 +52,7 @@ function createRegInputDiv(id, type, name){
     input.id = id;
     input.type = type;
     input.placeholder = name;
+    // input.required = true;
     // input.className = "input-full-width glow";
 
     var div = document.createElement("div");

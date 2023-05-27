@@ -9,8 +9,10 @@ function onLogin(){
         par.style = "color: red;";
         par.textContent = "Please fill out required fields";
         var ld= document.getElementById("logindiv");
+
         if(ld.children.length>0)
             ld.removeChild(ld.lastChild)
+            
         ld.appendChild(par);
 
     }
