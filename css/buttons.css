@@ -1,0 +1,36 @@
+.mulo {
+    font-size: 14px;
+    /* font-weight: bold; */
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #230871;
+    text-transform: uppercase;
+    position: relative;
+    transition: font-weight 0.2s ease;
+}
+
+.mulo::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #230871;
+    transition: .5s ease;
+}
+
+.mulo:hover {
+    color: #230871;
+}
+
+.mulo:hover::before {
+    width: 100%;
+}
+
+.mulo.active::before{
+	width: 100%;
+	opacity: 1;
+}

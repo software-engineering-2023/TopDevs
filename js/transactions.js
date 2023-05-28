@@ -21,16 +21,16 @@ function toggleExpansion(element) {
     
         switch (id) {
             case "b1": firstDiv.appendChild(newButton);
-                newButton.textContent = "Non-residents can open Savings Account with the bank. As per guidelines issued by The Central Bank of EGY, GCC nationals are allowed to open Current Account."
+                newButton.textContent = "Your transaction history is updated in real-time. Any new transactions or changes will be reflected immediately."
                 break;
             case "b2": secondDiv.appendChild(newButton);
-                newButton.textContent = "For transaction details please login to Mashreq Online or Mashreq Mobile or you can contact us on +9714-424-4444"
+                newButton.textContent = "Yes, you can download a copy of your transaction history. Simply click on the 'Download' button to save it as a file on your device."
                 break;
             case "b3": thirdDiv.appendChild(newButton)
-                newButton.textContent = "Yes, with Online Banking, you have access to your account information and transactions at any time it is convenient for you.";
+                newButton.textContent = "The transfer limits can vary based on factors such as your account type, transaction method, and the destination of the transfer. ";
                 break;
             case "b4": forthDiv.appendChild(newButton)
-                newButton.textContent = "Yes. Thanks to the convenience of Debit Cards, Online Banking, Bill Payments, Automatic Transfers, everyday banking activities can be performed on your own time and convenience."
+                newButton.textContent = "You can view your transaction history for the past 12 months. If you need records beyond that period, please contact our customer support."
         }
 
     } else {

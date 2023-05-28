@@ -173,7 +173,7 @@ ol {
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 14px 30px 12px;
-	background: #88C417;
+	background: #00af9a;
 	border: none;
 	letter-spacing: 1px;
 	border-radius: 4px;
@@ -682,7 +682,8 @@ ol {
 	height: 48px;
 	border-radius: 2px;
 	border: none;
-	background: #f6f6f6;
+	/* background: #f6f6f6; */
+	background: #ffffff;
 	padding-left: 15px;
 }
 
