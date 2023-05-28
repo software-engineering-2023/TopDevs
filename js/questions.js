@@ -4,7 +4,7 @@ const thirdDiv = document.getElementById("thirdQuestion");
 const forthDiv = document.getElementById("fourthQuestion");
 
 
-function toggleExpansion(element) {
+function toggleExpansion(element, answer) {
     const expanded = element.getAttribute("aria-expanded") === "true";
     element.setAttribute("aria-expanded", ! expanded);
     const id = element.id;
@@ -13,6 +13,7 @@ function toggleExpansion(element) {
         const newButton = document.createElement("button");
         newButton.className = "faq_button Accordion_accordionButtonContent__2UNtF";
         newButton.id = "content";
+        newButton.textContent = answer
         newButton.style.boxShadow = "0px 2px 5px rgba(0, 0, 0, 0.3), 0px -2px 0px rgba(0, 0, 0, 0)";
         newButton.style.fontWeight = 400;
         
@@ -21,16 +22,12 @@ function toggleExpansion(element) {
     
         switch (id) {
             case "b1": firstDiv.appendChild(newButton);
-                newButton.textContent = "Non-residents can open Savings Account with the bank. As per guidelines issued by The Central Bank of EGY, GCC nationals are allowed to open Current Account."
                 break;
             case "b2": secondDiv.appendChild(newButton);
-                newButton.textContent = "For transaction details please login to Mashreq Online or Mashreq Mobile or you can contact us on +9714-424-4444"
                 break;
             case "b3": thirdDiv.appendChild(newButton)
-                newButton.textContent = "Yes, with Online Banking, you have access to your account information and transactions at any time it is convenient for you.";
                 break;
             case "b4": forthDiv.appendChild(newButton)
-                newButton.textContent = "Yes. Thanks to the convenience of Debit Cards, Online Banking, Bill Payments, Automatic Transfers, everyday banking activities can be performed on your own time and convenience."
         }
 
     } else {
