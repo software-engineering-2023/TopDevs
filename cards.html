@@ -24,10 +24,14 @@
         <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/text.css" type="text/css">
+        <script src="js/nav.js"></script>
+
     </head>
 
     <body>
         <!-- Header Section Begin -->
+        <button id="backButton" onclick="goBack()">Back</button>
+
         <header class="header">
             <div class="container">
                 <div class="row">
@@ -86,22 +90,22 @@
 
 
         <!-- <section class="hero set-bg">
-                        <div class="container" style="margin-bottom: 18em;">
-                            <div class="row">
-                                <div class="col-lg-5 red">
-                                    <div class="hero__text">
-                                        <h1 class="bold" style="color: rgb(50,50,50)">Looking for a new card?</h1>
-                                        <p style="color: rgb(50,50,50)">Riyad Bank Titanium Credit Card Mastercard offers high flexibility and convenience to the travel enthusiast. It is designed to reward you with offers and special discounts at selected shops, restaurants and hotels worldwide.</p>
-                                        <button class="slide-button" style="width: 200px;" onclick="scrollToSection('card-apply-div')">APPLY NOW</button>
-                                    </div>
-                                </div>
-                
-                                <div class="col-sm-6 offset-1 blue">
-                                    <img style="margin-top: 60px; border-radius: 2%;" src="img/card-list-2.png">
-                                </div>
-                            </div>
-                        </div>
-                    </section> -->
+                                                <div class="container" style="margin-bottom: 18em;">
+                                                    <div class="row">
+                                                        <div class="col-lg-5 red">
+                                                            <div class="hero__text">
+                                                                <h1 class="bold" style="color: rgb(50,50,50)">Looking for a new card?</h1>
+                                                                <p style="color: rgb(50,50,50)">Riyad Bank Titanium Credit Card Mastercard offers high flexibility and convenience to the travel enthusiast. It is designed to reward you with offers and special discounts at selected shops, restaurants and hotels worldwide.</p>
+                                                                <button class="slide-button" style="width: 200px;" onclick="scrollToSection('card-apply-div')">APPLY NOW</button>
+                                                            </div>
+                                                        </div>
+                                        
+                                                        <div class="col-sm-6 offset-1 blue">
+                                                            <img style="margin-top: 60px; border-radius: 2%;" src="img/card-list-2.png">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section> -->
 
         <div class="row ralign" style="margin-bottom: 20em;">
             <div class="col-lg-5" style="flex: 1; padding-left: 13em;">
@@ -119,17 +123,17 @@
 
         <!-- Testimonial Section Begin -->
         <!-- <div class="testimonial spad set-bg" data-setbg="img/card-list-3.png">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="section-title">
-                                        <h2 class="hero__text" style="font-size: 50px;">Looking for a new card?</h2>
-                                        <p style="font-size: 20px;">Find the perfect choice</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="section-title">
+                                                                <h2 class="hero__text" style="font-size: 50px;">Looking for a new card?</h2>
+                                                                <p style="font-size: 20px;">Find the perfect choice</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
 
 
         <div class="testimonial__carousel" style="background-color: rgb(250, 250, 250);">
@@ -142,7 +146,7 @@
                                 <h5>Solitaire</h5>
                                 <span>Ceo Colorlib</span>
                                 <p>Enjoy limits of up to EGP 1 million,
-                                                                                                        0% fees on foreign currency transactions, and complimentary airport lounge access.
+                                                                                                                                                                                                                    0% fees on foreign currency transactions, and complimentary airport lounge access.
                                 </p>
                                 <button style="width: 100%; margin-bottom: 12px;" class="outline-btn" onclick="onRegBtn()">View Details</button>
 
@@ -157,7 +161,7 @@
                                 <h5>Platinium</h5>
                                 <span>Ceo Colorlib</span>
                                 <p>Discover worldwide access to airport lounges, rewards on all your purchases,
-                                                                                                        and up to EGP 500,000 in credit limits and 5% extra emergency limit.
+                                                                                                                                                                                                                    and up to EGP 500,000 in credit limits and 5% extra emergency limit.
                                 </p>
                                 <button style="width: 100%; margin-bottom: 12px;" class="outline-btn" onclick="onRegBtn()">View Details</button>
 
@@ -171,7 +175,7 @@
                                 <h5>Titanium</h5>
                                 <span>Ceo Colorlib</span>
                                 <p>Discover Reward Points on all spends, complimentary airport lounge access and attractive
-                                                                                                        discounts from our merchant partners.
+                                                                                                                                                                                                                    discounts from our merchant partners.
                                 </p>
                                 <button style="width: 100%; margin-bottom: 12px;" class="outline-btn" onclick="onRegBtn()">View Details</button>
 
@@ -234,8 +238,8 @@
                             <div class="footer__logo">
                                 <a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
                             </div>
-                            <!-- <p>Please remember though that how far you go is up to you. There is no substitute for your own
-                                                                                    work and effort in succeeding in this business.</p> -->
+                            <p>Please remember though that how far you go is up to you. There is no substitute for your own
+                                                                                                    work and effort in succeeding in this business.</p>
                         </div>
                     </div>
                     <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -243,9 +247,9 @@
                             <h5>Services</h5>
                             <div class="footer__widget">
                                 <ul>
-                                    <li><a href="cards.html">Credit Cards</a></li>
-                                    <li><a href="#">Loans</a></li>
-                                    <li><a href="bankAccounts.html">Bank Accounts</a></li>
+                                    <li><a href="#">Personal Loans</a></li>
+                                    <li><a href="#">Business Loans</a></li>
+                                    <li><a href="#">Online Cash Loans</a></li>
                                     <li><a href="#">Cash Advance</a></li>
                                 </ul>
                             </div>
@@ -295,17 +299,35 @@
                             class="col-lg-6 col-md-6">
                             <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                             <div class="footer__copyright__text">
-                                <p>Copyright &copy;
-                                    <script>
+                                <p>Copyright &copy;<script>
                                         document.write(new Date().getFullYear());
                                     </script>
+                                    All rights reserved | This template is made with
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                    by
+                                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
                                 </p>
-                            </a>
-                        </p>
+                            </div>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </div>
                     </div>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                 </div>
             </div>
-        </div>
+        </footer>
+        <!-- Footer Section End -->
+
+
+        <!-- Js Plugins -->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.nice-select.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/jquery.slicknav.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+
     </body>
-</html></div></footer><!-- Footer Section End --><!-- Js Plugins --><script src="js/jquery-3.3.1.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/jquery.nice-select.min.js"></script><script src="js/jquery-ui.min.js"></script><script src="js/jquery.nicescroll.min.js"></script><script src="js/jquery.magnific-popup.min.js"></script><script src="js/jquery.slicknav.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/main.js"></script></body></html>
+
+</html>

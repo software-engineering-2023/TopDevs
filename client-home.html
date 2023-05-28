@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    In Client
+    
+    <div id="info">
+
+    </div>
+</body>
+
+
+<script>
+    var u = sessionStorage.getItem('username');
+    var infodiv = document.getElementById('info');
+    infodiv.innerText = u;
+</script>
+
+</html>

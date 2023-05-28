@@ -25,6 +25,9 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/text.css" type="text/css">
         <link rel="stylesheet" href="css/mashreq.css" type="text/css">
+        <link rel="stylesheet" href="css/dashboard.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+        <script src="js/nav.js"></script>
 
 
         <style>
@@ -41,165 +44,85 @@
                 margin-right: 0;
             }
         </style>
+
+        <script>
+        
+        </script>
+
     </head>
 
     <body>
         <!-- Page Preloder -->
+        <button id="backButton" onclick="goBack()">Back</button>
 
-        <div class="ant-row-flex ant-row-flex-center" style="margin: -28px -16px;">
-            <div class="ant-col ant-col-24 ant-col-sm-12 ant-col-lg-8" style="padding: 28px 16px;">
-                <div class="Card_card__28wfw ProductCard_card__jZzpv ComparableOverlay_container__d7ALU Comparable_comparableOverlay__3liIy ProductList_product__2ZfTg">
-                    <div class="ProductCardTop_container__3gla4 ProductCardTop_typeCreditCard__1E9RL">
-                        <a href="/en/uae/personal/cards/credit-cards/solitaire-credit-card/" class="ProductCardTop_imageContainer__xrlQX" title="" target="">
-                            <svg fill="none" height="74" width="359" viewbox="0 0 359 74" class="ProductCardTop_triangle__2SD0s">
-                                <path d="m359 0v74h-359z" fill="currentColor"></path>
-                            </svg><img alt="سوليتير" width="600" height="374" class="ProductCardTop_image__11cdv" data-flip-img="false" src="/-/jssmedia/Images/UAE/Personal/Products/cards/Visa-Solitaire.ashx?h=374&amp;iar=0&amp;w=600&amp;hash=413C326F47C1571D5D2CA4466BB29BFE"></a>
-                        <div class="ProductCardTop_cardContent__5aeNJ ProductCardTop_cardContent__5aeNJ">
-                            <div class="ant-row-flex ProductCardTop_tags__EAjW6" style="margin: -4px;">
-                                <div class="ant-col" style="padding: 4px;">
-                                    <div class="Tag_tag__6v80R" style="background-color: var(--color-categories-orange-100, var(--tag-background-color)); color: var(--color-categories-orange-800, var(--tag-text-color));">Credit Card</div>
-                                </div>
-                            </div>
-                            <h5 class="Typography_h5__2CnIC ProductCardTop_title__1XQzM">Solitaire</h5>
-                            <p class="Typography_body4__3fXWt">Get Salaam Points on every spend, unlimited Fitness First visits, complimentary rounds of golf, 50% discount at Cinemas, valet parking, airport transfers &amp; global airport lounge access.</p>
-                        </div>
-                    </div>
-                    <div class="ProductCardBottom_cardBottom__3tm7n">
-                        <a href="/en/uae/personal/cards/credit-cards/solitaire-credit-card/" class="Button_button__3GYy0 Button_secondary__3KmEE Button_isFullWidth__d2KNX" title="View Details" target="_self">
-                            <span class="Button_text__1xvnl">View Details</span>
-                        </a>
-                        <a href="https://digital.mashreqbank.com/creditcards/ntb/otp-send?utm_pname=solitaire&amp;utm_pcode=SPC92&amp;utm_source=Website&amp;utm_medium=CardsListing" class="Button_button__3GYy0 Button_primary__3tOUa Button_isFullWidth__d2KNX" title="Apply Now" target="_blank" rel="noopener noreferrer">
-                            <span class="Button_text__1xvnl">Apply Now</span>
-                        </a>
-                    </div>
-                    <div>
-                        <div class="Comparable_compareToggle__2Rb62">
-                            <label class="Checkbox_checkbox__3HMWT ant-checkbox-wrapper">
-                                <span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span>
-                                </span>
-                                <span>
-                                    <p class="Typography_body6__2CyN2 Comparable_compareToggleText__1j6jt Typography_alternate__CGhAs">compare</p>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ant-col ant-col-24 ant-col-sm-12 ant-col-lg-8" style="padding: 28px 16px;">
-                <div class="Card_card__28wfw ProductCard_card__jZzpv ComparableOverlay_container__d7ALU Comparable_comparableOverlay__3liIy ProductList_product__2ZfTg">
-                    <div class="ProductCardTop_container__3gla4 ProductCardTop_typeCreditCard__1E9RL">
-                        <a href="/en/uae/personal/cards/credit-cards/platinum-elite-credit-card/" class="ProductCardTop_imageContainer__xrlQX" title="" target="">
-                            <svg fill="none" height="74" width="359" viewbox="0 0 359 74" class="ProductCardTop_triangle__2SD0s">
-                                <path d="m359 0v74h-359z" fill="currentColor"></path>
-                            </svg><img alt="Platinum-elite-visa" width="450" height="284" class="ProductCardTop_image__11cdv" data-flip-img="false" src="/-/jssmedia/Images/UAE/Personal/Products/cards/Platinum-elite-mastercard.ashx?h=284&amp;iar=0&amp;w=450&amp;hash=6D8DBC9E0C06ED4E5073A2F880CB491F"></a>
-                        <div class="ProductCardTop_cardContent__5aeNJ ProductCardTop_cardContent__5aeNJ">
-                            <div class="ant-row-flex ProductCardTop_tags__EAjW6" style="margin: -4px;">
-                                <div class="ant-col" style="padding: 4px;">
-                                    <div class="Tag_tag__6v80R" style="background-color: var(--color-categories-orange-100, var(--tag-background-color)); color: var(--color-categories-orange-800, var(--tag-text-color));">Credit Card</div>
-                                </div>
-                            </div>
-                            <h5 class="Typography_h5__2CnIC ProductCardTop_title__1XQzM">Platinum Elite</h5>
-                            <p class="Typography_body4__3fXWt">Get Salaam Points on every spend, complimentary Fitness First visits, 50% discount at Cinemas, airport transfers, &amp; global airport lounge access.</p>
-                        </div>
-                    </div>
-                    <div class="ProductCardBottom_cardBottom__3tm7n">
-                        <a href="/en/uae/personal/cards/credit-cards/platinum-elite-credit-card/" class="Button_button__3GYy0 Button_secondary__3KmEE Button_isFullWidth__d2KNX" title="View Details" target="_self">
-                            <span class="Button_text__1xvnl">View Details</span>
-                        </a>
-                        <a href="https://digital.mashreqbank.com/creditcards/ntb/otp-send?utm_pname=platinumelite&amp;utm_pcode=SPC92&amp;utm_source=Website&amp;utm_medium=CardsListing" class="Button_button__3GYy0 Button_primary__3tOUa Button_isFullWidth__d2KNX" title="Apply Now" target="_blank" rel="noopener noreferrer">
-                            <span class="Button_text__1xvnl">Apply Now</span>
-                        </a>
-                    </div>
-                    <div>
-                        <div class="Comparable_compareToggle__2Rb62">
-                            <label class="Checkbox_checkbox__3HMWT ant-checkbox-wrapper">
-                                <span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span>
-                                </span>
-                                <span>
-                                    <p class="Typography_body6__2CyN2 Comparable_compareToggleText__1j6jt Typography_alternate__CGhAs">compare</p>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="ant-col ant-col-24 ant-col-sm-12 ant-col-lg-8" style="padding: 28px 16px;">
-                <div class="Card_card__28wfw ProductCard_card__jZzpv ComparableOverlay_container__d7ALU Comparable_comparableOverlay__3liIy ProductList_product__2ZfTg">
-                    <div class="ProductCardTop_container__3gla4 ProductCardTop_typeCreditCard__1E9RL">
-                        <a href="/en/uae/personal/cards/credit-cards/cashback-credit-card/" class="ProductCardTop_imageContainer__xrlQX" title="" target="">
-                            <svg fill="none" height="74" width="359" viewbox="0 0 359 74" class="ProductCardTop_triangle__2SD0s">
-                                <path d="m359 0v74h-359z" fill="currentColor"></path>
-                            </svg><img alt="cashback" width="355" height="227" class="ProductCardTop_image__11cdv" data-flip-img="false" src="/-/jssmedia/Images/UAE/Personal/Products/cards/cashback.ashx?h=227&amp;iar=0&amp;w=355&amp;hash=FEBB1B27698825B37D3268516B768EFF"></a>
-                        <div class="ProductCardTop_cardContent__5aeNJ ProductCardTop_cardContent__5aeNJ">
-                            <div class="ant-row-flex ProductCardTop_tags__EAjW6" style="margin: -4px;">
-                                <div class="ant-col" style="padding: 4px;">
-                                    <div class="Tag_tag__6v80R" style="background-color: var(--color-categories-orange-100, var(--tag-background-color)); color: var(--color-categories-orange-800, var(--tag-text-color));">Credit Card</div>
-                                </div>
-                            </div>
-                            <h5 class="Typography_h5__2CnIC ProductCardTop_title__1XQzM">Cashback Card</h5>
-                            <p class="Typography_body4__3fXWt">Get 5% cashback on UAE dining spends, 2% cashback on non-AED spends, &amp; up to 1% cashback on other local spends. No Annual Fee
 
-                            </p>
-                        </div>
-                    </div>
-                    <div class="ProductCardBottom_cardBottom__3tm7n">
-                        <a href="/en/uae/personal/cards/credit-cards/cashback-credit-card/" class="Button_button__3GYy0 Button_secondary__3KmEE Button_isFullWidth__d2KNX" title="View Details" target="_self">
-                            <span class="Button_text__1xvnl">View Details</span>
-                        </a>
-                        <a href="https://digital.mashreqbank.com/creditcards/ntb/otp-send?utm_pname=cashback&amp;utm_pcode=SPC92&amp;utm_source=Website&amp;utm_medium=CardsListing" class="Button_button__3GYy0 Button_primary__3tOUa Button_isFullWidth__d2KNX" title="Apply Now" target="_blank" rel="noopener noreferrer">
-                            <span class="Button_text__1xvnl">Apply Now</span>
-                        </a>
-                    </div>
-                    <div>
-                        <div class="Comparable_compareToggle__2Rb62">
-                            <label class="Checkbox_checkbox__3HMWT ant-checkbox-wrapper">
-                                <span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span>
-                                </span>
-                                <span>
-                                    <p class="Typography_body6__2CyN2 Comparable_compareToggleText__1j6jt Typography_alternate__CGhAs">compare</p>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
+        <div class="menu-container">
+            <button id="toggle-button">Open Menu</button>
+            <div class="menu">
+              <ul>
+                <li class="menu-item">My Profile
+                  <ul class="submenu">
+                    <li>View Profile</li>
+                    <li>Edit Profile</li>
+                  </ul>
+                </li>
+                <li class="menu-item">My Account
+                  <ul class="submenu">
+                    <li>Account Settings</li>
+                    <li>Change Password</li>
+                  </ul>
+                </li>
+                <li class="menu-item">My Transactions
+                  <ul class="submenu">
+                    <li>View Transactions</li>
+                    <li>Transaction History</li>
+                  </ul>
+                </li>
+                <li class="menu-item">Settings</li>
+                <li class="menu-item">Log Out</li>
+              </ul>
+            </div>
+          </div>
+          
+          
+          
+
+
+        <div class="row ralign" style="margin-bottom: 20em;">
+            <div class="col-lg-5" style="flex: 1; padding-left: 13em;">
+                <h1 class="bold mb-4" style="color: rgb(50,50,50)">Looking for a new card?</h1>
+                <p class="" style="color: rgb(50,50,50); font-size: 1.2em;">Find the perfect choice.</p>
+            </div>
+
+            <div class="" style="display:flex; flex: 1; justify-content: right;">
+                <div class="" style="display: flex; justify-content: right;">
+                    <img style="margin-top: 60px; border-radius: 2%; width: 80%;" src="img/card-list-2.png">
                 </div>
             </div>
-            <div class="ant-col ant-col-24 ant-col-sm-12 ant-col-lg-8" style="padding: 28px 16px;">
-                <div class="Card_card__28wfw ProductCard_card__jZzpv ComparableOverlay_container__d7ALU Comparable_comparableOverlay__3liIy ProductList_product__2ZfTg">
-                    <div class="ProductCardTop_container__3gla4 ProductCardTop_typeCreditCard__1E9RL">
-                        <a href="/en/uae/personal/cards/credit-cards/noon-vip-credit-card/" class="ProductCardTop_imageContainer__xrlQX" title="" target="">
-                            <svg fill="none" height="74" width="359" viewbox="0 0 359 74" class="ProductCardTop_triangle__2SD0s">
-                                <path d="m359 0v74h-359z" fill="currentColor"></path>
-                            </svg><img alt="noon VIP" width="487" height="307" class="ProductCardTop_image__11cdv" data-flip-img="false" src="/-/jssmedia/Images/UAE/Personal/Products/cards/noon-vip-credit-card.ashx?h=307&amp;iar=0&amp;w=487&amp;hash=84B345FA170F6AEEF0E5AA6351B5E6C1"></a>
-                        <div class="ProductCardTop_cardContent__5aeNJ ProductCardTop_cardContent__5aeNJ">
-                            <div class="ant-row-flex ProductCardTop_tags__EAjW6" style="margin: -4px;">
-                                <div class="ant-col" style="padding: 4px;">
-                                    <div class="Tag_tag__6v80R" style="background-color: var(--color-categories-orange-100, var(--tag-background-color)); color: var(--color-categories-orange-800, var(--tag-text-color));">Credit Card</div>
-                                </div>
-                            </div>
-                            <h5 class="Typography_h5__2CnIC ProductCardTop_title__1XQzM">noon VIP</h5>
-                            <p class="Typography_body4__3fXWt">Get 5% cashback at noon, noon Daily, NowNow and Sivvi, and 1% Cashback on all other spends. No Annual Fee.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="ProductCardBottom_cardBottom__3tm7n">
-                        <a href="/en/uae/personal/cards/credit-cards/noon-vip-credit-card/" class="Button_button__3GYy0 Button_secondary__3KmEE Button_isFullWidth__d2KNX" title="View Details" target="_self">
-                            <span class="Button_text__1xvnl">View Details</span>
-                        </a>
-                        <a href="https://digital.mashreqbank.com/creditcards/ntb/otp-send?utm_pname=noonyellow&amp;utm_pcode=SPC92" class="Button_button__3GYy0 Button_primary__3tOUa Button_isFullWidth__d2KNX" title="Apply Now" target="_blank" rel="noopener noreferrer">
-                            <span class="Button_text__1xvnl">Apply Now</span>
-                        </a>
-                    </div>
-                    <div>
-                        <div class="Comparable_compareToggle__2Rb62">
-                            <label class="Checkbox_checkbox__3HMWT ant-checkbox-wrapper">
-                                <span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span>
-                                </span>
-                                <span>
-                                    <p class="Typography_body6__2CyN2 Comparable_compareToggleText__1j6jt Typography_alternate__CGhAs">compare</p>
-                                </span>
-                            </label>
-                        </div>
-                    </div>
+        </div>
+
+        <div class="row ralign" style="margin-bottom: 20em;">
+            <div class="col-lg-5" style="flex: 1; padding-left: 13em;">
+                <h1 class="bold mb-4" style="color: rgb(50,50,50)">Looking for a new card?</h1>
+                <p class="" style="color: rgb(50,50,50); font-size: 1.2em;">Find the perfect choice.</p>
+            </div>
+
+            <div class="" style="display:flex; flex: 1; justify-content: right;">
+                <div class="" style="display: flex; justify-content: right;">
+                    <img style="margin-top: 60px; border-radius: 2%; width: 80%;" src="img/card-list-2.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="row ralign" style="margin-bottom: 20em;">
+            <div class="col-lg-5" style="flex: 1; padding-left: 13em;">
+                <h1 class="bold mb-4" style="color: rgb(50,50,50)">Looking for a new card?</h1>
+                <p class="" style="color: rgb(50,50,50); font-size: 1.2em;">Find the perfect choice.</p>
+            </div>
+
+            <div class="" style="display:flex; flex: 1; justify-content: right;">
+                <div class="" style="display: flex; justify-content: right;">
+                    <img style="margin-top: 60px; border-radius: 2%; width: 80%;" src="img/card-list-2.png">
                 </div>
             </div>
         </div>
@@ -215,27 +138,55 @@
         <script src="js/jquery.slicknav.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/dashboard.js"></script>
         <script>
-            let prevScrollPos = window.pageYOffset;
-            const navbar = document.getElementById('navbar');
-            const pageHeight = document.documentElement.scrollHeight;
-            const scrollThreshold = pageHeight * 0.25; // Adjust the threshold as needed
 
-            window.onscroll = function () {
-                const currentScrollPos = window.pageYOffset;
+            function testNav(){
 
-                if (currentScrollPos < pageHeight) {
-                    navbar.style.top = "-160px"; // Adjust this value to match the height of your navbar
-                }
+            }
+
+            function testNav2() {
+                const myArray = ["tester", "test"];
+                // const arrayParam = myArray.join(',');
+
+                // Construct the URL with the array parameter
+                let url = 'page.html';
+                query = 'array=' + encodeURIComponent(myArray);
+                url += '?';
+                url += query;
+
+                let  urlParams = new URLSearchParams(query);
+                const myArrayEnc = urlParams.get('array');
+                const decArray = decodeURIComponent(myArrayEnc);
+                const dec2 = decArray.split(',');
+
+                // Navigate to the constructed URL
+                // window.location.href = url;
+                console.log(url);
+                console.log(dec2);
+            }
 
 
-                // Check if the user has scrolled to the top of the page
-                if (currentScrollPos === 0) {
-                    navbar.style.top = "0";
-                }
+            // let prevScrollPos = window.pageYOffset;
+            // const navbar = document.getElementById('navbar');
+            // const pageHeight = document.documentElement.scrollHeight;
+            // const scrollThreshold = pageHeight * 0.25; // Adjust the threshold as needed
 
-                prevScrollPos = currentScrollPos;
-            };
+            // window.onscroll = function () {
+            //     const currentScrollPos = window.pageYOffset;
+
+            //     if (currentScrollPos < pageHeight) {
+            //         navbar.style.top = "-160px"; // Adjust this value to match the height of your navbar
+            //     }
+
+
+            //     // Check if the user has scrolled to the top of the page
+            //     if (currentScrollPos === 0) {
+            //         navbar.style.top = "0";
+            //     }
+
+            //     prevScrollPos = currentScrollPos;
+            // };
         </script>
     </body>
 

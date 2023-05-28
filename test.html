@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <link rel="stylesheet" href="css/riyad.css" type="text/css">
         <link rel="stylesheet" href="css/text.css" type="text/css">
+        <script src="js/nav.js"></script>
 
 
         <style>
@@ -39,9 +40,13 @@
                 transform: translateY(0%); /* Move the div back to the original position */
             }
         </style>
+
+        
     </head>
 
     <body>
+        <button id="backButton" onclick="goBack()">Back</button>
+
 
         <!--VIEW SIMILAR PRODUCTS BEGIN-->
 
@@ -109,19 +114,6 @@
 
 
 
-
-
-
-    
-
-
-
-
-
-
-            
-
-
             
 
 
@@ -135,6 +127,8 @@
         <script src="js/jquery.slicknav.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/main.js"></script>
+        <script src="js/nav.js"></script>
+
         <script>
             let prevScrollPos = window.pageYOffset;
             const navbar = document.getElementById('navbar');
