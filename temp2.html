@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Expand</title>
+    <style>
+        .container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .container[aria-expanded="true"] .content {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" aria-expanded="false" onclick="toggleExpansion(this)">
+        <div class="content">
+        </div>
+    </div>
+
+    <div class="container" aria-expanded="false" onclick="toggleExpansion(this)">
+        <div class="content"></div>
+    </div>
+
+
+
+    <script>
+        function toggleExpansion(element) {
+            const expanded = element.getAttribute("aria-expanded") === "true";
+            element.setAttribute("aria-expanded", !expanded);
+
+            if (!expanded) {
+                const newDiv = document.createElement("div");
+                newDiv.className = "content";
+
+                const containerHeight = element.offsetHeight;
+                newDiv.style.top = `${containerHeight}px`;
+
+                element.parentNode.insertBefore(newDiv, element.nextSibling);
+
+                adjustSubsequentDivs(newDiv.offsetHeight);
+            } else {
+                const contentDiv = element.querySelector(".content");
+
+                if (contentDiv) {
+                    element.parentNode.removeChild(contentDiv);
+                    adjustSubsequentDivs(-contentDiv.offsetHeight);
+                }
+            }
+        }
+
+        function adjustSubsequentDivs(heightChange) {
+            const containerDivs = document.getElementsByClassName("container");
+
+            for (let i = 0; i < containerDivs.length; i++) {
+                const containerDiv = containerDivs[i];
+                const nextSibling = containerDiv.nextElementSibling;
+
+                if (nextSibling && nextSibling.classList.contains("container")) {
+                    nextSibling.style.top = `${nextSibling.offsetTop + heightChange}px`;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

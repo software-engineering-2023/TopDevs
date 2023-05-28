@@ -1,0 +1,85 @@
+.Typography_h3__2Llct,.Typography_richtext__3xZx8 {
+    color: inherit;
+    color: var(--h3-color);
+    font-size: var(--h3-font-size);
+    font-weight: var(--h3-font-weight);
+    line-height: var(--h3-line-height);
+    
+
+}
+
+.Typography_h3__2Llct.Typography_alternate__CGhAs,.Typography_richtext__3xZx8 h3.Typography_alternate__CGhAs {
+    font-size: var(--h3-alternate-font-size);
+    line-height: var(--h3-alternate-line-height);
+    font-weight: var(--h3-font-weight-light)
+}
+
+.Accordion_accordionButtonContent__2UNtF {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    cursor: pointer;
+    width: 100%;
+    flex-direction: row-reverse;
+    transition: all linear;
+}
+
+.Typography_body3__kp5W2 {
+    color: inherit;
+    color: var(--body-3-color);
+    font-size: var(--body-3-font-size);
+    font-weight: var(--body-3-font-weight);
+    line-height: var(--body-3-line-height)
+}
+
+.Typography_body3__kp5W2 ol,.Typography_body3__kp5W2 ul {
+    font-size: var(--body-4-font-size)
+}
+
+.Typography_body3__kp5W2.Typography_alternate__CGhAs {
+    color: var(--body-3-color-alternate);
+    font-weight: var(--body-3-alternate-font-weight)
+}
+
+.Accordion_accordionButtonText__34jwo {
+    text-align: left
+}
+
+[dir=rtl] .Accordion_accordionButtonText__34jwo {
+    text-align: right
+}
+
+.Typography_richtext__3xZx8 .button {
+    background-color: var(--button-primary-background-color);
+    color: var(--button-primary-text-color);
+    padding: 16px 24px;
+    border-radius: 4px;
+    display: inline-block
+}
+
+.faq_button{
+    background-color: white; 
+    margin: auto; 
+    text-align: left;
+    border: none; 
+    padding: 20px 30px;  
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    transition: all ease-in-out;
+    font-weight: bolder;
+}
+
+.faq_button svg {
+    float: right;
+    margin-left: 20px; /* Adjust the margin value as needed */
+  }
+
+  
+
+
+  .questionDiv{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
