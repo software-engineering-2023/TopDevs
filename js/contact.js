@@ -15,12 +15,16 @@ function displayCreditCardDetails() {
     var cardNo = document.createElement('input');
     cardNo.type = 'text';
     cardNo.placeholder = 'Card Number..';
+    
+    document.getElementById('applyForReplacementContainer').style.display = 'flex';
 
     cardDetails.appendChild(cardOwner);
     cardDetails.appendChild(cardNo);
   }
+  else{
+    document.getElementById('applyForReplacementContainer').style.display = 'none';
+  }
 }
-
 
 function onContactSubmit() {
   event.preventDefault();
@@ -30,6 +34,7 @@ function onContactSubmit() {
   var description = document.querySelector('textarea[placeholder="Description.."]').value;
   var selectIssueType = document.getElementById('selectIssueType').value;
   var cont = document.getElementById('messageContainer');
+
 
   var errorMessage = document.getElementById('errorMessage');
 
