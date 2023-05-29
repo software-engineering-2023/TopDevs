@@ -3,85 +3,318 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Loanday Template">
+    <meta name="keywords" content="Loanday, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Click to Expand</title>
-    <style>
-        .container {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            background-color: lightblue;
-            cursor: pointer;
-            margin-bottom: 10px;
-        }
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FOMSY</title>
 
-        .content {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 200px;
-            height: 200px;
-            background-color: coral;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-        .container[aria-expanded="true"] .content {
-            opacity: 1;
-        }
-    </style>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/FAQ.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/text.css" >
 </head>
 
 <body>
-    <div class="container" aria-expanded="false" onclick="toggleExpansion(this)">
-        <div class="content">
+
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="./services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="./services.html">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="./services-details.html">Services Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="./blog-details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__search">
+                            <i class="fa fa-search search-switch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <div class="row ralign" style="margin-bottom: 20em;">
+        <div class="col-lg-5" style="flex: 1; padding-left: 13em; margin-top: 5em;">
+            <h1 class="bold mb-4 " style="color: rgb(50,50,50)">Achieve your goals</h1>
+            <p class="" style="color: rgb(50,50,50); font-size: 1.2em;">Find the loan for you</p>
+        </div>
+
+        <div class="" style="display:flex; flex: 1; justify-content: right;">
+            <div class="" style="display: flex; justify-content: right;">
+                <img style="margin-top: 60px; border-radius: 2%; width: 80%;" src="img/current-account-2.jpg">
+            </div>
         </div>
     </div>
 
-    <div class="container" aria-expanded="false" onclick="toggleExpansion(this)">
-        <div class="content"></div>
+    <!-- Testimonial Section Begin -->
+
+    <div class="testimonial__carousel">
+        <div class="container">
+            <div class="row">
+                <div class="testimonial__slider owl-carousel">
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img style="margin-top: 20px;" src="img/current-account.jpg">
+                            <h5>Current Account</h5>
+                            <span>Quick and easy processing</span>
+                            <p>This account combines convenience and flexibility with financial and non-financial
+                                benefits,
+                                plus access to cash in 200+ countries.
+                            </p>
+                            <button style="width: 100%; margin-bottom: 12px;" class="outline-btn"
+                                onclick="onRegBtn()">View Details</button>
+
+                            <button style="width: 100%" class="site-btn" onclick="">APPLY NOW</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img style="margin-top: 20px;" src="img/savings-account-1.jpg">
+                            <h5>Savings Account</h5>
+                            <span>Savings made easy</span>
+                            <p>A Savings Account that offers interest on deposits,
+                                whilst offering you the freedom to make banking transactions at no cost.
+                            </p>
+                            <button style="width: 100%; margin-bottom: 12px;" class="outline-btn"
+                                onclick="onRegBtn()">View Details</button>
+
+                            <button style="width: 100%" class="site-btn" onclick="">APPLY NOW</button>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="testimonial__item">
+                            <img style="margin-top: 20px;" src="img/current-account-1.jpg">
+                            <h5>Students Accounts</h5>
+                            <span>Banking Made Simple.</span>
+                            <p>Experience the ease and convenience of banking with our Students Account.
+                                Start your banking journey with us today and enjoy easy processing.
+
+                            </p>
+                            <button style="width: 100%; margin-bottom: 12px;" class="outline-btn"
+                                onclick="onRegBtn()">View Details</button>
+
+                            <button style="width: 100%" class="site-btn" onclick="">APPLY NOW</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <!-- Testimonial Section End -->
+
+    <!-- Questions Part -->
+    <div style="background-color: whitesmoke; margin-bottom: 0px;">
+        <div style="padding-bottom: 30px; background-color: whitesmoke;">
+            <h3 style=" font-weight: bolder; text-align: center; margin-top: 20px; padding: 10px 20px;"> FAQs</h3>
+
+            <div id="firstQuestion" class = "questionDiv">
+                <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px 0px;">
+                    <button id="b1" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'Non-residents can open Savings Account with the bank. As per guidelines issued by The Central Bank of EGY, GCC nationals are allowed to open Current Account.')">I am not a
+                        resident of
+                        Egypt. Can I open an account with the Bank?
+                        <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
+                            class="Accordion_accordionIcon__4Khtb">
+                            <path
+                                d="M16.059 20.78L4.617 9.392 2.721 11.28l12.388 12.333a1.34 1.34 0 001.891 0L29.388 11.28l-1.887-1.888L16.06 20.78z">
+                            </path>
+                        </svg>
+                    </button>
+                </span>
+            </div>
+
+            <div id="secondQuestion" class = "questionDiv">
+                <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px;">
+                    <button id="b2" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'For transaction details please login to Mashreq Online or Mashreq Mobile or you can contact us on +9714-424-4444')">How do I
+                        enquire about transaction details?
+                        <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
+                            class="Accordion_accordionIcon__4Khtb">
+                            <path
+                                d="M16.059 20.78L4.617 9.392 2.721 11.28l12.388 12.333a1.34 1.34 0 001.891 0L29.388 11.28l-1.887-1.888L16.06 20.78z">
+                            </path>
+                        </svg>
+                    </button>
+                </span>
+            </div>
+
+            <div id="thirdQuestion" class = "questionDiv">
+                <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px;">
+                    <button id="b3" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'Yes, with Online Banking, you have access to your account information and transactions at any time it is convenient for you.')">Can I keep
+                        track of my transactions at any time?
+                        <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
+                            class="Accordion_accordionIcon__4Khtb">
+                            <path
+                                d="M16.059 20.78L4.617 9.392 2.721 11.28l12.388 12.333a1.34 1.34 0 001.891 0L29.388 11.28l-1.887-1.888L16.06 20.78z">
+                            </path>
+                        </svg>
+                    </button>
+                </span>
+            </div>
+
+            <div id="fourthQuestion" class = "questionDiv">
+                <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px;">
+                    <button id="b4" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'Yes. Thanks to the convenience of Debit Cards, Online Banking, Bill Payments, Automatic Transfers, everyday banking activities can be performed on your own time and convenience.')">Can I do all of my banking with you?
+                        <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
+                            class="Accordion_accordionIcon__4Khtb">
+                            <path
+                                d="M16.059 20.78L4.617 9.392 2.721 11.28l12.388 12.333a1.34 1.34 0 001.891 0L29.388 11.28l-1.887-1.888L16.06 20.78z">
+                            </path>
+                        </svg>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        </div>
+
+   
 
 
+    </div>
+     <!-- End of Questions Part -->
 
-    <script>
-        function toggleExpansion(element) {
-            const expanded = element.getAttribute("aria-expanded") === "true";
-            element.setAttribute("aria-expanded", !expanded);
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
+                        </div>
+                        <p>Please remember though that how far you go is up to you. There is no substitute for your own
+                            work and effort in succeeding in this business.</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Services</h5>
+                        <div class="footer__widget">
+                            <ul>
+                                <li><a href="#">Personal Loans</a></li>
+                                <li><a href="#">Business Loans</a></li>
+                                <li><a href="#">Online Cash Loans</a></li>
+                                <li><a href="#">Cash Advance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Socials</h5>
+                        <div class="footer__widget footer__widget--social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i> Skype</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget footer__widget--address">
+                        <h5>Open Hours</h5>
+                        <p>We work all days a week, Please contact us for any inquiry.</p>
+                        <ul>
+                            <li>Monday - Friday: 11:00 am - 8:00 pm</li>
+                            <li>Saturday: 10:00 am - 6:00 pm</li>
+                            <li>Sunday: 11:00 am - 6:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="footer__copyright__links">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                                template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
+                                    href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </p>
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
 
-            if (!expanded) {
-                const newDiv = document.createElement("div");
-                newDiv.className = "content";
-
-                const containerHeight = element.offsetHeight;
-                newDiv.style.top = `${containerHeight}px`;
-
-                element.parentNode.insertBefore(newDiv, element.nextSibling);
-
-                adjustSubsequentDivs(newDiv.offsetHeight);
-            } else {
-                const contentDiv = element.querySelector(".content");
-
-                if (contentDiv) {
-                    element.parentNode.removeChild(contentDiv);
-                    adjustSubsequentDivs(-contentDiv.offsetHeight);
-                }
-            }
-        }
-
-        function adjustSubsequentDivs(heightChange) {
-            const containerDivs = document.getElementsByClassName("container");
-
-            for (let i = 0; i < containerDivs.length; i++) {
-                const containerDiv = containerDivs[i];
-                const nextSibling = containerDiv.nextElementSibling;
-
-                if (nextSibling && nextSibling.classList.contains("container")) {
-                    nextSibling.style.top = `${nextSibling.offsetTop + heightChange}px`;
-                }
-            }
-        }
-    </script>
+    <!-- Js Plugins -->
+    <script src="js/questions.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
