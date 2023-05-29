@@ -1,0 +1,1384 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/bell.css' rel='stylesheet'>
+
+
+    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/css/style.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
+    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <link rel="stylesheet" href="assets/libs/css/custom.css">
+    <link rel="stylesheet" href="css/internal.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/alert.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/close.css' rel='stylesheet'>
+
+    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper"> <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" href="index.html">Concept</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto navbar-right-top">
+                        <li class="nav-item">
+                            <div id="custom-search" class="top-search-bar">
+                                <input class="form-control" type="text" placeholder="Search..">
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown notification">
+                            <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-fw fa-bell"></i>
+                                <span class="indicator"></span>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                                <li>
+                                    <div class="notification-title">
+                                        Notification</div>
+                                    <div class="notification-list">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item list-group-item-action active">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-2.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block">
+                                                        <span class="notification-list-user-name">Jeremy
+                                                            Rakestraw</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-3.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block">
+                                                        <span class="notification-list-user-name">John Abraham
+                                                        </span>is now following you
+                                                        <div class="notification-date">2 days ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-4.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block">
+                                                        <span class="notification-list-user-name">Monaan Pechi</span>
+                                                        is watching your main repository
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action">
+                                                <div class="notification-info">
+                                                    <div class="notification-list-user-img"><img
+                                                            src="assets/images/avatar-5.jpg" alt=""
+                                                            class="user-avatar-md rounded-circle"></div>
+                                                    <div class="notification-list-user-block">
+                                                        <span class="notification-list-user-name">Jessica
+                                                            Caruso</span>accepted your invitation to join the team.
+                                                        <div class="notification-date">2 min ago</div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="list-footer">
+                                        <a href="#">View all notifications</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown connection">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-fw fa-th"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                                <li class="connection-list">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/github.png"
+                                                    alt="">
+                                                <span>Github</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/dribbble.png"
+                                                    alt="">
+                                                <span>Dribbble</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/dropbox.png"
+                                                    alt="">
+                                                <span>Dropbox</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/bitbucket.png"
+                                                    alt="">
+                                                <span>Bitbucket</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/mail_chimp.png"
+                                                    alt=""><span>Mail chimp</span>
+                                            </a>
+                                        </div>
+                                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                            <a href="#" class="connection-item"><img src="assets/images/slack.png"
+                                                    alt="">
+                                                <span>Slack</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="conntection-footer">
+                                        <a href="#">More</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown nav-user">
+                            <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img
+                                    src="assets/images/avatar-1.jpg" alt="" class="user-avatar-md rounded-circle"></a>
+                            <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                                aria-labelledby="navbarDropdownMenuLink2">
+                                <div class="nav-user-info">
+                                    <h5 class="mb-0 text-white nav-user-name">John Abraham
+                                    </h5>
+                                    <span class="status"></span>
+                                    <span class="ml-2">Available</span>
+                                </div>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user mr-2"></i>Account</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cog mr-2"></i>Setting</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-power-off mr-2"></i>Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link active" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-1" aria-controls="submenu-1">
+                                    <i class="fa fa-fw fa-user-circle"></i>Dashboard
+                                    <span class="badge badge-success">6</span>
+                                </a>
+                                <div id="submenu-1" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                                data-target="#submenu-1-2" aria-controls="submenu-1-2">E-Commerce</a>
+                                            <div id="submenu-1-2" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="index.html">E Commerce Dashboard</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="ecommerce-product.html">Product
+                                                            List</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="ecommerce-product-single.html">Product
+                                                            Single</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link"
+                                                            href="ecommerce-product-checkout.html">Product Checkout</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="dashboard-finance.html">Finance</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="dashboard-sales.html">Sales</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                                data-target="#submenu-1-1" aria-controls="submenu-1-1">Infulencer</a>
+                                            <div id="submenu-1-1" class="collapse submenu" style="">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link"
+                                                            href="dashboard-influencer.html">Influencer</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="influencer-finder.html">Influencer
+                                                            Finder</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="influencer-profile.html">Influencer
+                                                            Profile</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-2" aria-controls="submenu-2">
+                                    <i class="fa fa-fw fa-rocket"></i>Bills</a>
+                                <div id="submenu-2" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/cards.html">Loan Bill
+                                                <span class="badge badge-secondary">New</span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/general.html">Credit Card Bill</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/carousel.html">Utility Bill</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-3" aria-controls="submenu-3">
+                                    <i class="fas fa-fw fa-chart-pie"></i>Transfers</a>
+                                <div id="submenu-3" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-c3.html">Internal</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-chartist.html">Domestic</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/chart-charts.html">International</a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-4" aria-controls="submenu-4">
+                                    <i class="fab fa-fw fa-wpforms"></i>Transactions</a>
+                                <div id="submenu-4" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/form-elements.html">Form Elements</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/form-validation.html">Parsely
+                                                Validations</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/multiselect.html">Multiselect</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/datepicker.html">Date Picker</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/bootstrap-select.html">Bootstrap Select</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false"
+                                    data-target="#submenu-5" aria-controls="submenu-5">
+                                    <i class="fas fa-fw fa-table"></i>Rewards</a>
+                                <div id="submenu-5" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/general-table.html">General Tables</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="pages/data-tables.html">Data Tables</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="nav-divider">
+                                Account
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-f fa-folder"></i>Settings</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                    <i class="fas fa-f fa-folder"></i>Log out</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- end left sidebar -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- wrapper  -->
+    <!-- ============================================================== -->
+
+
+    <div class="dashboard-wrapper">
+        <div class="dashboard-ecommerce">
+            <div class="container-fluid dashboard-content ">
+                <!-- ============================================================== -->
+                <!-- pageheader  -->
+                <!-- ============================================================== -->
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header" style="border-bottom: 1px solid #e0e4ef;">
+                            <h1 class="">Welcome, Omar!
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header" style="border-bottom: 1px solid #e0e4ef;">
+                            <h2 class="pageheader-title">Bank Accounts
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader  -->
+                <!-- ============================================================== -->
+                <div class="ecommerce-widget"> <!--BANK ACCOUNTS FRAMES BEGIN-->
+
+
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <!--CURRENT BANK ACCOUNT FRAME BEGIN-->
+                            <div id="savings-parent" class="card border-3 border-top border-top-primary"
+                                style="width: 25em;">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Savings Account</h3>
+                                </div>
+                                <div class="card-header">
+
+                                    <!--Increase Icon-->
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+
+                                        <div
+                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                            <span class="icon-circle-small icon-box-xs text-success bg-success-light">
+                                                <i class="fa fa-fw fa-arrow-up"></i>
+                                            </span>
+                                            <span class="ml-1">25%</span>
+                                        </div>
+
+                                    </div>
+                                    <p>Available balance</p>
+
+                                    <div style="display: flex; align-items: baseline;">
+                                        <h1>
+                                            <span style="font-size: 20px; font-weight: 400;">
+                                                EGP
+                                            </span>9,000
+                                        </h1>
+                                    </div>
+                                    <!-- <p>The generated Lorem Ipsum is therefore always free from repetition</p> -->
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text mb-1">BAN</p>
+                                    <p class="card-text" style="font-weight: 600;">5719524174914133</p>
+
+                                    <p class="card-text mb-1">Last transaction date</p>
+                                    <p class="card-text" style="font-weight: 600;">14/02/2023</p>
+                                    <div style="display: flex; justify-content: right;">
+                                        <button class="btn btn-outline-dark collapsed" style="transform: scale(0.95);"
+                                            data-toggle="collapse" data-target="#collapsedSavings" aria-expanded="false"
+                                            aria-controls="collapsedSavings">Manage</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CURRENT BANK ACCOUNT FRAME END-->
+                        </div>
+
+                        <div class="col-xl-4">
+                            <!--CURRENT BANK ACCOUNT FRAME BEGIN-->
+                            <div id="current-parent" class="card border-3 border-top border-top-primary"
+                            style="width: 25em;">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Current Account</h3>
+                                </div>
+                                <div class="card-header">
+
+                                    <!--Increase Icon-->
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <div
+                                            class="metric-label d-inline-block float-right text-secondary font-weight-bold">
+                                            <span class="icon-circle-small icon-box-xs text-danger bg-danger-light">
+                                                <i class="fa fa-fw fa-arrow-down"></i>
+                                            </span>
+                                            <span class="ml-1">3.0%</span>
+                                        </div>
+                                    </div>
+                                    <p>Available balance</p>
+
+                                    <div style="display: flex; align-items: baseline;">
+                                        <h1>
+                                            <span style="font-size: 20px; font-weight: 400;">
+                                                EGP
+                                            </span>60,500
+                                        </h1>
+                                    </div>
+                                    <!-- <p>The generated Lorem Ipsum is therefore always free from repetition</p> -->
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text mb-1">BAN</p>
+                                    <p class="card-text" style="font-weight: 600;">5719524174914133</p>
+
+                                    <p class="card-text mb-1">Last transaction date</p>
+                                    <p class="card-text" style="font-weight: 600;">14/02/2023</p>
+                                    <div style="display: flex; justify-content: right;">
+                                        <button class="btn btn-outline-dark" style="transform: scale(0.95);"
+                                            data-toggle="collapse" data-target="#collapsedCurrent" aria-expanded="false"
+                                            aria-controls="collapsedCurrent">Manage</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CURRENT BANK ACCOUNT FRAME END-->
+                        </div>
+
+
+                        <div class="col-xl-4">
+
+                            <!--FOREIGN BANK ACCOUNT FRAME BEGIN-->
+                            <div id="foreign-parent" class="card border-3 border-top border-top-primary"
+                            style="width: 25em;">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Foreign Currency Account</h3>
+                                </div>
+                                <div class="card-header">
+
+                                    <!--Increase Icon-->
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+                                        <div
+                                            class="metric-label d-inline-block float-right text-secondary font-weight-bold">
+                                            <span class="icon-circle-small icon-box-xs text-danger bg-danger-light">
+                                                <i class="fa fa-fw fa-arrow-down"></i>
+                                            </span>
+                                            <span class="ml-1">3.0%</span>
+                                        </div>
+                                    </div>
+                                    <p>Available balance</p>
+
+                                    <div style="display: flex; align-items: baseline;">
+                                        <h1>
+                                            <span style="font-size: 20px; font-weight: 400;">
+                                                USD
+                                            </span>7,350
+                                        </h1>
+                                    </div>
+
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text mb-1">IBAN</p>
+                                    <p class="card-text" style="font-weight: 600;">5719524174914133</p>
+
+                                    <p class="card-text mb-1">Last transaction date</p>
+                                    <p class="card-text" style="font-weight: 600;">14/02/2023</p>
+                                    <div style="display: flex; justify-content: right;">
+                                        <button class="btn btn-outline-dark" style="transform: scale(0.95);"
+                                            data-toggle="collapse" data-target="#collapsedForeign" aria-expanded="false"
+                                            aria-controls="collapsedForeign">Manage</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--FOREIGN BANK ACCOUNT FRAME END-->
+                        </div>
+                    </div>
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!-- COLLAPSED MENU FROM SAVINGS ACCOUNT-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+                    <div id="collapsedSavings" class="card collapse" aria-labelledby="savings-parent"
+                        data-parent="#savings-parent">
+                        <div class="card-header mb-0">
+                            <h3>Savings Account</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Balance</p>
+                                    <p class="card-text">EGP 9,000</p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Account Number</p>
+                                    <p class="card-text">5719524174914133 </p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">IBAN</p>
+                                    <p class="card-text">EG36000205719524174914133</p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">SWIFT code</p>
+                                    <p class="card-text">BMISEGCXXXX</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row" style="display: flex; justify-content: right;">
+                                <button class="btn btn-outline-danger mr-3" onclick="popup('close-account-form')">Close
+                                    Account</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!-- COLLAPSED MENU FROM CURRENT ACCOUNT-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+                    <div id="collapsedCurrent" class="card collapse" aria-labelledby="current-parent"
+                        data-parent="#current-parent">
+                        <div class="card-header mb-0">
+                            <h3>Current Account</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Balance</p>
+                                    <p class="card-text">EGP 60,500</p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Account Number</p>
+                                    <p class="card-text">5411519541719513 </p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">IBAN</p>
+                                    <p class="card-text">EG36000205411519541719513</p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">SWIFT code</p>
+                                    <p class="card-text">BMISEGCXXXX</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row" style="display: flex; justify-content: right;">
+                                <button class="btn btn-outline-danger mr-3" onclick="popup('close-account-form')">Close
+                                    Account</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!-- COLLAPSED MENU FROM FOREIGN ACCOUNT-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+                    <div id="collapsedForeign" class="card collapse" aria-labelledby="savings-parent"
+                        data-parent="#savings-parent">
+                        <div class="card-header mb-0">
+                            <h3>Foreign Currency Account</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Balance</p>
+                                    <p class="card-text">USD 7,350</p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Account Number</p>
+                                    <p class="card-text">5124933517284358 </p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">IBAN</p>
+                                    <p class="card-text">EG36000205124933517284358</p>
+                                </div>
+
+                                <div class="col-lg-3">
+                                    <p class="card-text mb-1" style="font-weight: 600;">SWIFT code</p>
+                                    <p class="card-text">BMISEGCXXXX</p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="row" style="display: flex; justify-content: right;">
+                                <button class="btn btn-outline-danger mr-3" onclick="popup('close-account-form')">Close
+                                    Account</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <!--END OF BANK ACCOUNT FRAMES-->
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!--START OF CREDIT CARD FRAMES-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header" style="border-bottom: 1px solid #e0e4ef;">
+                                <h2 class="pageheader-title">Credit Cards
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
+                        <!--TITANIUM CREDIT CARD FRAME BEGIN-->
+                        <!--WORKING HERE-->
+
+                        <div class="col-xl-4">
+                            <div id="card-parent" class="card border-3 border-top border-top-primary"
+                                style="width: 22em;">
+                                <div class="card-header">
+
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 class="card-title mb-2">Credit
+                                        </h3>
+                                        <span class="mr-2">
+                                            <span id="card-status-icon" class="badge-dot badge-success"></span>
+                                            <span id="card-status-str">ACTIVE</span>
+
+                                    </div>
+
+                                    <span class="mr-2">
+                                        VISA GOLD
+                                    </span>
+
+                                </div>
+
+                                <div class="card-body">
+                                    <img class="img-fluid mb-4" src="img/credit-card-sample.png" alt="Card image cap"
+                                        style="transform: scale(1);">
+
+                                    <p class="card-text mb-1">Cardholder Name</p>
+                                    <p class="card-text" style="font-weight: 600;">Omar Mohamed Sobhy</p>
+
+                                    <p class="card-text mb-1">Card Number</p>
+                                    <p class="card-text" style="font-weight: 600;">4581 **** **** 9172</p>
+
+                                    <div style="display: flex; justify-content: right;">
+                                        <button id="block-btn" class="btn btn-outline-dark collapsed"
+                                            style="transform: scale(0.95);" data-toggle="collapse"
+                                            data-target="#collapsedGold" aria-expanded="false"
+                                            aria-controls="collapsedGold">Manage</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!-- COLLAPSED MENU FROM CARD-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+                    <div id="collapsedGold" class="card collapse" aria-labelledby="card-parent"
+                        data-parent="#card-parent">
+                        <div class="card-header mb-0">
+                            <h3>Credit - Visa Gold</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Cardholder Name</p>
+                                    <p class="card-text">Omar Abdelrehim Sobhy</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Card Number</p>
+                                    <p class="card-text">4581 **** **** 9172</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Expiry Date</p>
+                                    <p class="card-text">03/27</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Available Points</p>
+                                    <p class="card-text">4,600</p>
+                                </div>
+
+
+
+                                <div class="bell" onclick="popup('reminder-form')" style="margin-left: 24em;">
+                                    <i class="gg-bell"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Due Payment</p>
+                                    <p class="card-text">EGP 7,000</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Payment Deadline</p>
+                                    <p class="card-text">30/04/23</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Credit Limit</p>
+                                    <p class="card-text">EGP 40,000</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Remaining Credit</p>
+                                    <p class="card-text">EGP 26,000/40,000</p>
+                                </div>
+                            </div>
+
+                            <div class="row" style="display: flex; justify-content: right;">
+                                <button class="btn btn-outline-dark" onclick="popup('credit-bill-form')">Pay</button>
+                                <button class="btn btn-outline-dark ml-2 mr-2" onclick="popup('redeem-form')">Redeem
+                                    Points</button>
+
+                            </div>
+
+                            <div class="row">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!--LOANS-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header" style="border-bottom: 1px solid #e0e4ef;">
+                                <h2 class="pageheader-title">Loans
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <!--CURRENT BANK ACCOUNT FRAME BEGIN-->
+                            <div id="loan-parent" class="card border-3 border-top border-top-primary"
+                                style="width: 25em;">
+                                <div class="card-header">
+                                    <h3 class="mb-0">Personal Loan</h3>
+                                </div>
+                                <div class="card-header">
+
+                                    <!--Increase Icon-->
+                                    <div class="metric-label d-inline-block float-right text-success font-weight-bold">
+
+                                        <div
+                                            class="metric-label d-inline-block float-right text-success font-weight-bold">
+
+                                        </div>
+
+                                    </div>
+                                    <p>Overdue amount</p>
+
+                                    <div style="display: flex; align-items: baseline;">
+                                        <h1>
+                                            <span style="font-size: 20px; font-weight: 400;">
+                                                EGP
+                                            </span>150,000
+                                        </h1>
+                                    </div>
+                                    <!-- <p>The generated Lorem Ipsum is therefore always free from repetition</p> -->
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Interest rate</p>
+                                    <p class="card-text" style="">13%</p>
+
+                                    <p class="card-text mb-1" style="font-weight: 600;">Last payment date</p>
+                                    <p class="card-text" style="">14/04/2023</p>
+                                    <div style="display: flex; justify-content: right;">
+                                        <button class="btn btn-outline-dark collapsed" style="transform: scale(0.95);"
+                                            data-toggle="collapse" data-target="#collapsedLoan" aria-expanded="false"
+                                            aria-controls="collapsedLoan">Manage</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--CURRENT BANK ACCOUNT FRAME END-->
+                        </div>
+                    </div>
+
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!-- COLLAPSED MENU FROM CARD-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+
+                    <div id="collapsedLoan" class="card collapse" aria-labelledby="loan-parent"
+                        data-parent="#loan-parent">
+                        <div class="card-header mb-0">
+                            <h3>Personal Loan</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="row mb-4">
+
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Loan amount</p>
+                                    <p class="card-text">EGP 300,000</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Interest rate</p>
+                                    <p class="card-text">13%</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Repayment period</p>
+                                    <p class="card-text">3 years</p>
+                                </div>
+
+                                <div class="col-lg-2">
+                                    <p class="card-text mb-1" style="font-weight: 600;">Monthly payment</p>
+                                    <p class="card-text">EGP 8,333</p>
+                                </div>
+
+                                <div class="bell" onclick="popup('reminder-form')" style="margin-left: 24em;">
+                                    <i class="gg-bell"></i>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row" style="display: flex; justify-content: right;">
+                                <button class="btn btn-outline-dark mr-4" onclick="popup('loan-bill-form')">Pay</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+                    <!--TRANSACTION HISTORY-->
+                    <!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$-->
+
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="page-header" style="border-bottom: 1px solid #e0e4ef;">
+                                <h2 class="pageheader-title">Transaction History
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-l-10">
+                        <div class="card">
+                            <h5 class="card-header">Transaction History</h5>
+                            <div class="card-body" style="max-height: 300px; overflow-y: scroll;">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Date</th>
+                                            <th scope="col">Description</th>
+                                            <th scope="col">Amount</th>
+                                            <th scope="col">Type</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Payment Received</td>
+                                            <td class="credit text-success">+$500.00</td>
+                                            <td class="transaction-type">Credit</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Online Purchase</td>
+                                            <td class="debit text-danger">-$150.00</td>
+                                            <td class="transaction-type">Debit</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>ATM Withdrawal</td>
+                                            <td class="debit text-danger">-$50.00</td>
+                                            <td class="transaction-type">Debit</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Salary Deposit</td>
+                                            <td class="credit text-success">+$2,000.00</td>
+                                            <td class="transaction-type">Credit</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Bank Account Transfer</td>
+                                            <td class="debit text-danger">-$200.00</td>
+                                            <td class="transaction-type">Bank Account</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Bill Payment</td>
+                                            <td class="debit text-danger">-$75.00</td>
+                                            <td class="transaction-type">Debit</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Bank Account Deposit</td>
+                                            <td class="credit text-success">+$1,500.00</td>
+                                            <td class="transaction-type">Bank Account</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Online Transfer</td>
+                                            <td class="debit text-danger">-$100.00</td>
+                                            <td class="transaction-type">Debit</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Bank Account Transfer</td>
+                                            <td class="debit text-danger">-$250.00</td>
+                                            <td class="transaction-type">Bank Account</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2023-05-25</th>
+                                            <td>Interest Earned</td>
+                                            <td class="credit text-success">+$50.00</td>
+                                            <td class="transaction-type">Credit</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <div class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            Copyright © 2018 Concept. All rights reserved. Dashboard by
+                            <a href="https://colorlib.com/wp/">Colorlib</a>.
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="javascript: void(0);">About</a>
+                                <a href="javascript: void(0);">Support</a>
+                                <a href="javascript: void(0);">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- ============================================================== -->
+        <!-- end wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+
+    <div id="credit-bill-form" class="popupDiv">
+        <div class="contact-form popupContent" style="width: 40em;">
+            <div style="display: flex; justify-content: right;">
+                <i onclick="popoff('credit-bill-form')" class="gg-close cross"></i>
+            </div>
+            <h2>Credit Card Payment</h2>
+            <h3>Due amount is EGP 7,000</h3>
+            <p>Please fill in the form below:</p>
+            <form id="creditForm" action="#" method="post">
+
+                <div class="input-list">
+                    <label for="fromAccount">Select account to pay with</label>
+                    <select id="fromAccount" name="fromAccount" required="">
+                        <option value="" selected="" disabled="">Select Account</option>
+                        <option value="savings">Savings</option>
+                        <option value="current">Current</option>
+                    </select>
+                </div>
+
+
+                <div class="input-list">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Amount.." required="">
+                </div>
+
+
+
+                <div style="display: flex; justify-content: right;">
+                    <button type="submit">Pay</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="redeem-form" class="popupDiv">
+        <div class="contact-form popupContent" style="width: 40em;">
+            <div style="display: flex; justify-content: right;">
+                <i onclick="popoff('redeem-form')" class="gg-close cross"></i>
+            </div>
+
+            <h2>Redeem your credit card points!</h2>
+            <h3>Available points = 4,600</h3>
+            <h3>5 Points = 1 EGP</h3>
+            <p>Please fill in the form below:</p>
+            <form id="redeemForm" action="#" method="post">
+
+                <div class="input-list">
+                    <label for="fromAccount">Select account to transfer money into</label>
+                    <select id="fromAccount" name="fromAccount" required="">
+                        <option value="" selected="" disabled="">Select Account</option>
+                        <option value="savings">Savings</option>
+                        <option value="current">Current</option>
+                    </select>
+                </div>
+
+
+                <div class="input-list">
+                    <label for="amount">How much points would you like to redeem?</label>
+                    <input type="number" id="amount" name="amount" placeholder="Amount.." required="">
+                </div>
+
+
+
+                <div style="display: flex; justify-content: right;">
+                    <button type="submit">Redeem</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="close-account-form" class="popupDiv">
+        <div class="contact-form popupContent" style="width: 100em;">
+            <div style="display: flex; justify-content: right;">
+                <i onclick="popoff('close-account-form')" class="gg-close cross"></i>
+            </div>
+
+            <h2 class="text-danger">Closing an account cannot be undone.</h2>
+            <p>Password is required before proceeding</p>
+
+            <form id="closeForm" action="#" method="post">
+                <div class="input-list">
+                    <label for="amount">Password</label>
+                    <input type="password" id="amount" name="amount" placeholder="*************" required="">
+                </div>
+
+
+                <div style="display: flex; justify-content: right;">
+                    <button type="submit" style="background-color: rgb(223, 14, 14);">CLOSE
+                        ACCOUNT</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="loan-bill-form" class="popupDiv">
+        <div class="contact-form popupContent" style="width: 40em;">
+
+            <div style="display: flex; justify-content: right;">
+                <i onclick="popoff('loan-bill-form')" class="gg-close cross"></i>
+            </div>
+
+            <h2>Loan Payment</h2>
+            <h3>Due amount is EGP 8,333</h3>
+            <p>Please fill in the form below:</p>
+            <form id="loanForm" action="#" method="post">
+
+                <div class="input-list">
+                    <label for="fromAccount">Select account to pay with</label>
+                    <select id="fromAccount" name="fromAccount" required="">
+                        <option value="" selected="" disabled="">Select Account</option>
+                        <option value="savings">Savings</option>
+                        <option value="current">Current</option>
+                    </select>
+                </div>
+
+
+                <div class="input-list">
+                    <label for="amount">Amount</label>
+                    <input type="number" id="amount" name="amount" placeholder="Amount.." required="">
+                </div>
+
+
+
+                <div style="display: flex; justify-content: right;">
+                    <button type="submit">Pay</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="reminder-form" class="popupDiv">
+        <div class="contact-form popupContent" style="width: 40em;">
+
+            <div style="display: flex; justify-content: right;">
+                <i onclick="popoff('reminder-form')" class="gg-close cross"></i>
+            </div>
+
+            <h2>Reminder</h2>
+            <h3>Set a reminder for all your obligations.</h3>
+            <p>Please fill in the form below:</p>
+            <form id="reminderForm" action="#" method="post">
+
+                <div class="input-list">
+                    <label for="amount">Title</label>
+                    <input type="text" id="amount" name="amount" placeholder="My Gas Bill" required="">
+                </div>
+
+
+                <div class="input-list">
+                    <label for="amount">Date of reminding</label>
+                    <input type="date" id="amount" name="amount" placeholder="dd/mm/yyyy" required="">
+                </div>
+
+                <div class="input-list">
+                    <label for="amount">Priority</label>
+                    <input type="text" id="amount" name="amount" placeholder="HIGH/MEDIUM/LOW.." required="">
+                </div>
+
+
+                <div style="display: flex; justify-content: right;">
+                    <button type="submit">Set Reminder</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div id="alerts-div"></div>
+
+    </div>
+
+
+    <!-- ============================================================== -->
+    <!-- end main wrapper  -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <!-- jquery 3.3.1 -->
+    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"> </script>
+    <!-- bootstap bundle js -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <!-- slimscroll js -->
+    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <!-- main js -->
+    <script src="assets/libs/js/main-js.js"></script>
+    <!-- chart chartist js -->
+    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
+    <!-- sparkline js -->
+    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
+    <!-- morris js -->
+    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
+    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
+    <!-- chart c3 js -->
+    <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
+    <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
+    <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/alert.js"></script>
+
+
+    <script>
+        
+        var loanForm = document.getElementById('loanForm');
+        loanForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Perform form submission and success handling here
+
+            // Display success message
+            popoff('loan-bill-form');
+            myalert('Loan bill paid successfully!');
+        });
+
+        var reminderForm = document.getElementById('reminderForm');
+        reminderForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Perform form submission and success handling here
+
+            // Display success message
+            popoff('reminder-form');
+            myalert('Reminder set successfully!');
+        });
+
+
+        var creditForm = document.getElementById('creditForm');
+        creditForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Perform form submission and success handling here
+
+            // Display success message
+            popoff('credit-bill-form');
+            myalert('Credit bill paid successfully!');
+        }); 
+
+        var redeemForm = document.getElementById('redeemForm');
+        redeemForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Perform form submission and success handling here
+
+            // Display success message
+            popoff('redeem-form');
+            myalert('Your points have been funded into your account successfully!');
+        }); 
+
+        var closeForm = document.getElementById('closeForm');
+        closeForm.addEventListener('submit', function (event) {
+            event.preventDefault();
+            // Perform form submission and success handling here
+
+            // Display success message
+            popoff('close-account-form');
+            myalert('Your account has been closed.');
+        }); 
+
+
+
+
+
+
+    </script>
+</body>
+</body>
+</body>
+
+</html>
+</body>
+
+</html>
