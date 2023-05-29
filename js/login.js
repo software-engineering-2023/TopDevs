@@ -27,7 +27,7 @@ function onLogin() {
         } else if (u === "banker") {
             window.location.href = "./banker-home.html";
         } else {
-            window.location.href = "./client-home.html";
+            window.location.href = "./home.html";
         }
     }
 }
