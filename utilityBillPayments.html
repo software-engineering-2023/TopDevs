@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Utility Bill Payments</title>
+    <link rel="stylesheet" href="css/alert.css" type="text/css">
+    <link rel="stylesheet" href="css/international.css">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="./services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="./services.html">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="./services-details.html">Services Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="./blog-details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__search">
+                            <i class="fa fa-search search-switch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <br>
+
+
+    <div>
+        <div class="containerB">
+            <h2>Utility Bill Payments Form</h2>
+            <p>Please fill in the form below:</p>
+            <form id="transferForm">
+                <div class="input-list">
+                    <label for="Available Billers">Available Billers:</label>
+                    <select id="fromAccount" required>
+                        <option disabled selected>Select Billers</option>
+                        <option value="gas">Gas</option>
+                        <option value="water">Water</option>
+                        <option value="electricity">Electricity</option>
+                        <option value="telephone">Telephone</option>
+
+                    </select>
+                </div>
+                <div class="input-list">
+                    <label for="fromAccount">From Account Number:</label>
+                    <select id="fromAccount" required>
+                        <option disabled selected>Select Account Number</option>
+                        <option value="1">98765432109876</option>
+                        <option value="2">56789012345678</option>
+                        <option value="3">80246813579024</option>
+                    </select>
+                </div>
+                <div class="input-list">
+                    <label for="fromAccount">Organizations:</label>
+                    <select id="fromAccount" required>
+                        <option disabled selected>Select an Organization</option>
+                        <option value="1">EgyptElectricity</option>
+                        <option value="2">NTRA</option>
+                        <option value="3">Cairo Water and Sewage Company</option>
+                        <option value="4">EGAS</option>
+                    </select>
+                </div>
+                <div class="input-list">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" placeholder="Amount.." required>
+                </div>
+                <div class="input-list">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" required>
+                </div>
+                <div id="errorMessage" class="message error"></div>
+                <div id="successMessage" class="toast-message"></div>
+                <div class="button-container">
+                    <button type="submit" onclick="myalert('success', 'Bill Submitted Successfuly')">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
+                        </div>
+                        <!-- <p>Please remember though that how far you go is up to you. There is no substitute for your own
+                        work and effort in succeeding in this business.</p> -->
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Services</h5>
+                        <div class="footer__widget">
+                            <ul>
+                                <li><a href="cards.html">Credit Cards</a></li>
+                                <li><a href="#">Loans</a></li>
+                                <li><a href="bankAccounts.html">Bank Accounts</a></li>
+                                <li><a href="#">Cash Advance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Socials</h5>
+                        <div class="footer__widget footer__widget--social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i> Skype</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget footer__widget--address">
+                        <h5>Open Hours</h5>
+                        <p>We work all days a week, Please contact us for any inquiry.</p>
+                        <ul>
+                            <li>Monday - Friday: 11:00 am - 8:00 pm</li>
+                            <li>Saturday: 10:00 am - 6:00 pm</li>
+                            <li>Sunday: 11:00 am - 6:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="footer__copyright__links">
+                            <li><a href="#">Terms of use</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                            <p>Copyright &copy;
+                                <script>document.write(new Date().getFullYear());</script></a>
+                            </p>
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> <!-- Footer Section End -->
+
+
+    <script src="js/alert.js"></script>
+</body>
+
+</html>
