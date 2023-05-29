@@ -32,3 +32,29 @@ function onLogin() {
     }
 }
 
+const fingerprintIcon = document.getElementById('fingerprint-icon');
+const popup = document.getElementById('popup');
+const closeIcon = document.getElementById('close-icon');
+
+const faceidicon = document.getElementById('faceid-icon');
+const popupF = document.getElementById('popupF');
+const closeIconF = document.getElementById('close-iconF');
+
+
+faceidicon.addEventListener('click', () => {
+    popupF.style.display = 'block';
+  });
+  
+  closeIconF.addEventListener('click', () => {
+    popupF.style.display = 'none';
+  });
+  
+
+
+fingerprintIcon.addEventListener('click', () => {
+  popup.style.display = 'block';
+});
+
+closeIcon.addEventListener('click', () => {
+  popup.style.display = 'none';
+});

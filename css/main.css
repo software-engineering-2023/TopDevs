@@ -617,4 +617,9 @@ input.input100 {
 .login100-form-social-item:hover {
   background: #333333;
   color: #fff;
-}
+
+
+  .material-icons {
+    vertical-align: middle;
+    line-height: 1;
+  }}
