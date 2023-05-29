@@ -29,7 +29,7 @@
         <script src="js/nav.js"></script>
 
         <style></style>
-        
+
         <script>
 
         </script>
@@ -37,7 +37,7 @@
     </head>
 
     <body>
-        <button id="backButton" onclick="goBack()">Back</button>
+        <INPUT TYPE="button" VALUE="Back" onClick="history.go(-1);">
 
 
         <!-- Header Section Begin -->
@@ -45,8 +45,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
+                        <a href="./index.html"><img src="img/FOMSY__2_-removebg-preview.png" alt=""width="200" height="150"></a>
                         <div class="header__logo">
-                            <a href="./index.html"><img src="img/FOMSY__2_-removebg-preview.png" alt=""></a>
                         </div>
                     </div>
                     <div class="col-lg-9">
@@ -96,29 +96,25 @@
             </div>
         </header>
         <!-- Header Section End -->
-
-
-        <!--Card Div With Apply Buttons-->
-        <section class="hero set-bg">
+        <div class="testimonial spad set-bg" data-setbg="img/current-account-4.jpg" style="background-image: url(&quot;img/current-account-4.jpg&quot;);">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-5">
-                        <div class="hero__text">
-                            <p class="extra-big-title bold" style="color: rgb(50,50,50)">Solitaire Card</p>
-                            <p style="color: rgb(50,50,50)">With FOMSY's Solitaire Credit Card A world of luxury awaits you</p>
+                    <div class="col-lg-12">
+                        <div class="section-title ">
+                            <h2 class="hero__text" style="font-size: 50px;">FOMSY Current Account</h2>
+                            <p style="font-size: 20px;">For all your needs</p>
+                            <br>
                             <button class="slide-button" style="width: 200px;" onclick="scrollToSection('card-apply-div')">APPLY NOW</button>
                             <!-- <a href="#" class="primary-btn howit-btn">How It Work</a> -->
+                            
                         </div>
-                    </div>
-
-                    <div class="col-sm-6 offset-1">
-                        <img style="margin-top: 60px;" src="img/solitaire.png">
+                        
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!--End Card Div-->
+
 
         <div style="height: 100px;"></div>
 
@@ -127,18 +123,18 @@
 
         <div class="row" style="padding: 2em 10em 2em 10em;">
             <div class="col-lg-4 calign-hv" style="border-right: 1px solid;">
-                <h1 class="med-title">Access to airport lounge</h1>
-                <p>access to 900+ lounges</p>
+                <h1 class="med-title">Easy set up</h1>
+                <p>Fast & simple</p>
             </div>
 
             <div class="col-lg-4 calign-hv" style="border-right: 1px solid;">
-                <h1 class="med-title">Earn Reward Points</h1>
-                <p>6 points for every 1 EGP spent</p>
+                <h1 class="med-title">Free transactions</h1>
+                <p>Enjoy up to 6 free manned transactions per month (transactions in the Branch of the Bank).</p>
             </div>
 
-            <div class="col-lg-4 calign-hv" style="">
-                <h1 class="med-title">Complimentary valet</h1>
-                <p>In big cities globally</p>
+            <div class="col-lg-4 calign-hv">
+                <h1 class="med-title">Access to 1.8 million ATMs</h1>
+                <p>In 200 countries</p>
             </div>
 
         </div>
@@ -149,41 +145,41 @@
 
         <!-- BENEFIT CARDS -->
 
-        <div class="" style="">
+        <div class="">
             <div class="mb-5" style="display: flex; justify-content: center; flex-direction: column; align-items: center;">
                 <h3 class="small-title">
                     BENEFITS
                 </h3>
-                <h1 class="big-title change-color">Premium benefits for Solitaire customers</h1>
+                <h1 class="big-title change-color">Premium benefits for Current account Users</h1>
             </div>
 
             <div class="row mb-5" style="display: flex; justify-content: center;">
                 <div class="col-lg-5 calign">
                     <div class="benefit-title" id="title-bar">
-                        Earn even more BONUS points
+                        Easy set-up
                     </div>
                     <div id="benefit-desc">
-                        Earn 6 bonus points on every 1 EGP spent while traveling abroad or even at home.
+                        It’s fast and simple to set up your account. Simply ensure to have your National ID ready with you.
                     </div>
                 </div>
 
                 <div class="col-lg-5">
-                    <img src="img/cib-card.jpg" alt="" style="border-radius: 8px;">
+                    <img src="img/current-account-1.jpg" alt="" style="border-radius: 8px;">
                 </div>
             </div>
 
             <div class="row" style="display: flex; justify-content: center;">
 
                 <div class="col-lg-5">
-                    <img src="img/airport.png" alt="" style="border-radius: 8px;">
+                    <img src="img/current-account-2.jpg" alt="" style="border-radius: 8px;">
                 </div>
 
                 <div class="col-lg-5 calign">
                     <div class="benefit-title" id="title-bar">
-                        Travel smoothly
+                        Worldwide access
                     </div>
                     <div id="benefit-desc">
-                        Gain free access to over 900 airport lounges, and travel in luxury
+                        Your current account takes you anywhere in the world. Access your funds with ease in over 200 countries and through 1.8 million ATMs.
                     </div>
                 </div>
             </div>
@@ -193,7 +189,7 @@
         <div style="height: 100px;"></div>
 
 
-        <!--OVERVIEW INFORMATION-->
+          <!--OVERVIEW INFORMATION-->
 
         <div class="" style="background-color: #eaf5f6; padding: 2.5em 4em 2.5em 4em;">
             <h3 class="big-title bold">More Information</h3>
@@ -211,8 +207,8 @@
                                     <li class="" id="howto">
                                         <a onclick="onCreditInfo('howto')">How To Apply</a>
                                     </li>
-                                     <li class="" id="fees">
-                                        <a onclick="onCreditInfo('fees')">FEES</a>
+                                    <li>
+                                        <a href="./blog.html">Fees & Charges</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -238,7 +234,7 @@
                 </div>
 
                 <div class="col-lg-3" style="display:flex; justify-content:center;">
-                    <button id="fees" class="mulo bold" onclick="onCreditInfo('fees')">
+                    <button id="fees" class="mulo">
                         Fees
                     </button>
                 </div>
@@ -246,6 +242,14 @@
 
             <div id="info-div" style="margin-left: 20px;">
                 <ul>
+                    <li>
+                        No annual fee for the first year and free for each year the monthly amount spend is 1700 SAR
+                    </li>
+
+                    <li>
+                        Annual fee is automatically waived when you spend more than SAR 20,000 in the previous year
+                    </li>
+
                     <li>
                         Free additional credit cards for any of your family members
                     </li>
@@ -262,20 +266,20 @@
 
 
         <!--APPLICATION 1-->
-
+        
         <div class="hero__form" id="card-apply-div" style="background-color: #fafafa; padding: 30px 100px 30px 100px;">
             <div id="title-div" style="display:flex; justify-content: left;">
-                <h3 class="big-title">Apply Online - Solitaire Credit Card</h3>
+                <h3 class="big-title">Apply Online - Current Account</h3>
             </div>
             <div id="title-div" style="display:flex; justify-content: left; border: solid; border-width: 0px 0 2px 0; margin-bottom: 2em;">
-                <p>Solitaire Visa Credit Card from FOMSY Bank takes you to a world of luxury and sophistication giving you exceptional privileges from Visa on shopping.
+                <p>Once you open your account, you will receive your FOMSY Debit Card within 2 working days so you can have access to your funds.
                 </p>
             </div>
 
             <form action="#" id="reg-form">
 
                 <div class="input-list">
-                    <div class="input-list-item" style="">
+                    <div class="input-list-item">
                         <label for="textbox1">ID Number:</label>
                         <input style="border: 2px solid; border-color: rgb(166, 166, 166); border-radius: 5px;" type="text" id="textbox1" name="textbox1" placeholder="123456789">
                     </div>
@@ -294,7 +298,7 @@
 
                     <div class="input-list-item">
                         <label for="textbox2">Bank Account Number:</label>
-                        <input style="border: 2px solid; border-color: rgb(166, 166, 166); border-radius: 5px;" type="text" id="textbox2" name="textbox1">
+                        <input style="border: 2px solid; border-color: rgb(166, 166, 166); border-radius: 5px;" type="text" id="textbox2" name="textbox1"placeholder="123456789">
                     </div>
                 </div>
 
@@ -311,226 +315,130 @@
 
         <!--VIEW SIMILAR PRODUCTS BEGIN-->
 
-        <div class="ralign mb-3" style="">
+        <div class="ralign mb-3">
             <h3 class="big-title">Similar products you may like</h3>
         </div>
 
         <div class="row ralign" style="margin-bottom: 5em;">
 
             <div class="grow calign-l mr-5" style="width: 20em; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-                <img src="img/platinum.png" style="width: 100%; height: 100%;margin-bottom: 1em;">
+                <img src="img/savings-account-1.jpg" style="width: 100%; height: 100%;margin-bottom: 1em;">
 
 
                 <div class="calign-l " style="padding: 0 1em 0 1em;">
-                    <a href="about.html" class="med-title">Platinum Credit card</a>
-                    <a href="platinum.html" class="med-title">Platinum Credit card</a>
-                    <p style="color: rgb(49, 49, 49)">The perfect companion for jet-setters; get maximum benefits at home and abroad.
+                    <a href="savings.html" class="med-title">Savings Account</a>
+                    <p style="color: rgb(49, 49, 49)">Savings made easy
                     </p>
-
                 </div>
 
             </div>
 
 
             <div class="grow calign-l mr-5" style="width: 20em; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);">
-                <img src="img/orange.png" style="width: 100%; height: 100%;margin-bottom: 1em;">
+                <img src="img/student-account.png" style="width: 100%; height: 100%;margin-bottom: 1em;">
 
 
                 <div class="calign-l " style="padding: 0 1em 0 1em;">
- 
-                    <a href="about.html" class="med-title">Titanium Credit card</a>
-
-                    <a href="temp.html" class="med-title">Titanium Credit card</a>
-                    <p style="color: rgb(49, 49, 49)">The perfect companion for jet-setters; get maximum benefits at home and abroad.
-
+                    <a href="student-account.html" class="med-title">Students Account</a>
+                    <p style="color: rgb(49, 49, 49)">Less than 18? No Problem!
                     </p>
                 </div>
 
             </div>
+
+
+            
+
+            </div>
+
+
         </div>
 
         <!--VIEW SIMILAR PRODUCTS END-->
 
 
- <!-- Footer Section Begin -->
- <footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="footer__about">
-                    <div class="footer__logo">
-                        <a href="./index.html"><img src="img/FOMSY__2_-removebg-preview.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                <div class="footer__widget">
-                    <h5>Services</h5>
-                    <div class="footer__widget">
-                        <ul>
-                            <li><a href="Loans.html">Apply for a loan</a></li>
-                            <li><a href="cards.html">Apply for a credit card </a></li>
-                            <li><a href="#">Pay online bills </a></li>
-                            <li><a href="#">Cash Transfer</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-3 col-sm-6">
-                <div class="footer__widget">
-                    <h5>Socials</h5>
-                    <div class="footer__widget footer__widget--social">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fa fa-skype"></i> Skype</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                <div class="footer__widget footer__widget--address">
-                    <h5>Open Hours</h5>
-                    <p>We work all days a week, Please contact us for any inquiry.</p>
-                    <ul>
-                        <li>Sunday - Thursday: 11:00 am - 8:00 pm</li>
-                        <li>Friday: 10:00 am - 6:00 pm</li>
-                        <li>Saturday: 11:00 am - 6:00 pm</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer__copyright">
+       <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6">
-                    <ul class="footer__copyright__links">
-                        <li><a href="term.html">Terms of use</a></li>
-                        <li><a href="cookie.html">Cookie Policy</a></li>
-                        <li><a href="disclaimer.html">Disclaimer</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    <div class="footer__copyright__text">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="img/FOMSY__2_-removebg-preview.png" alt=""></a>
+                        </div>
                     </div>
-                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Services</h5>
+                        <div class="footer__widget">
+                            <ul>
+                                <li><a href="#">Apply for a loan</a></li>
+                                <li><a href="#">Apply for a credit card </a></li>
+                                <li><a href="#">Pay online bills </a></li>
+                                <li><a href="#">Cash Transfer</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Socials</h5>
+                        <div class="footer__widget footer__widget--social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i> Skype</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget footer__widget--address">
+                        <h5>Open Hours</h5>
+                        <p>We work all days a week, Please contact us for any inquiry.</p>
+                        <ul>
+                            <li>Sunday - Thursday: 11:00 am - 8:00 pm</li>
+                            <li>Friday: 10:00 am - 6:00 pm</li>
+                            <li>Saturday: 11:00 am - 6:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="footer__copyright__links">
+                            <li><a href="term.html">Terms of use</a></li>
+                            <li><a href="cookie.html">Cookie Policy</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- Footer Section End -->
+    </footer>
+    <!-- Footer Section End -->
 
+    <!-- Js Plugins -->
+    <script src="js/regselect.js"></script>
 
-
-        <!-- Js Plugins -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.nice-select.min.js"></script>
-        <script src="js/jquery-ui.min.js"></script>
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.slicknav.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/main.js"></script>
-        <script>
-
-            function scrollToSection(id) {
-                var sectionElement = document.getElementById(id);
-                sectionElement.scrollIntoView({behavior: 'smooth'});
-            }
-
-            function onCreditInfo(infoType) { // RESET ELEMENT
-                var infoDiv = document.getElementById('info-div');
-                infoDiv.innerHTML = "";
-
-                var overview = document.getElementById('overview');
-                var eligibility = document.getElementById('eligibility');
-                var howto = document.getElementById('howto');
-                var fees = document.getElementById('fees');
-
-                // RESET TAB CLASSES
-                overview.className = "mulo";
-                eligibility.className = "mulo";
-                howto.className = "mulo";
-                fees.className = "mulo";
-
-                // HIGHLIGHT ACTIVE TAB
-                var callerElement = document.getElementById(infoType);
-                callerElement.classList.toggle('active');
-                callerElement.classList.add('bolder');
-
-                console.log(callerElement.classList)
-
-                var liArray = []
-                var list = document.createElement('ul');
-
-                switch (infoType) {
-                    case "overview":
-                        bullets = [
-                            "Free additional credit cards for any of your family members",
-                            "Fraud protection for items bought using the card",
-                            "Tap to pay with FOMSY Contactless Cards",
-                            "Receive your credit card PIN securely through your online account",
-                            "Enjoy 2 free valet parking per billing cycle at premium locations world wide",
-                            "Relax in 1000+ airport lounges by presenting your Card at the reception. Both Primary and Supplementary Solitaire Cardholders can visit along with a complimentary guest."
-                        ];
-                        break;
-                    case "eligibility":
-                        bullets = [
-                            "For Egyptians and non-Egyptians", 
-                            "Above the age of 21 and below 65*", 
-                            "Salaried, self-employed, and professionals"
-                        ];
-                        break;
-                    case "howto":
-                        bullets = [
-                            "Apply online below or complete an application form at one of our branches ", 
-                            "Provide the required documents",
-                            "If your application is approved, you will receive a confirmation SMS and the Credit card will be delivered to the address you mentioned in the application form"
-                        ];
-                        break;
-                    case "fees":
-                        bullets = [
-                            "Issuance and Renewal Fees: EGP 2000",
-                            "Replacement Fees: EGP 300", 
-                            "Supplementary Fees: Free",
-                            "Over-limit Fees: EGP 75", 
-                            "Late Payment Fees: EGP100"
-
-                        ];
-                        break;
-                }
-
-
-                console.log(bullets);
-
-                liArray = generateList(bullets);
-                liArray.forEach(l => list.appendChild(l));
-                infoDiv.appendChild(list);
-
-                // console.log(infoType);
-            }
-
-
-            function generateList(bullets) {
-                var elemArray = [];
-
-                bullets.forEach(b => {
-                    console.log(b);
-                    var li = document.createElement('li');
-                    li.innerText = b;
-                    li.className = 'info-list-item';
-                    elemArray.push(li);
-                })
-
-                return elemArray;
-
-            }
-        </script>
-
-
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/bootstrap.min.js"></script> -->
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
     </body>
 
 </html>

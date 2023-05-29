@@ -1,12 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/libs/css/style.css">
+    <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Loanday Template">
+    <meta name="keywords" content="Loanday, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FOMSY</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/FAQ.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carFousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
     <title>Document</title>
 </head>
+
 <body>
-    In Admin
+
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active">
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./about.html">About</a>
+                                </li>
+                                <li>
+                                    <a href="./services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="./blog.html">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li>
+                                            <a href="./services.html">Features</a>
+                                        </li>
+                                        <li>
+                                            <a href="./services-details.html">Services Details</a>
+                                        </li>
+                                        <li>
+                                            <a href="./blog-details.html">Blog Details</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="./contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__search">
+                            <i class="fa fa-search search-switch"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <div class="col-l-10" style="display: flex; justify-content: center;">
+        <div class="card" style="width: 80%; margin-top: 40px;">
+            <h5 class="card-header">Technical Issues</h5>
+            <div class="card-body" style="max-height: 500px; overflow-y: scroll;">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">Report ID</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Resolved</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Resolve</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Sara Khaled</td>
+                            <td>Unresolved</td>
+                            <td>It takes too long for the app or website to load, and I have to wait for a while before
+                                I can use it.</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Mariam Mohsen</td>
+                            <td>Unresolved</td>
+                            <td> I'm having trouble logging into my account, even though I'm entering the correct
+                                username and password.</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Omar Mohamed</td>
+                            <td>Unresolved</td>
+                            <td>The app or website looks strange, with elements appearing in the wrong place or
+                                overlapping each other.</td>
+                            <td>
+                                <button class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Malak Labib</td>
+                            <td>Resolved</td>
+                            <td>When I click on a link or button, nothing happens, or it takes me to a different page
+                                than expected.</td>
+                            <td>
+                                <button disabled class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Logine Mohamed</td>
+                            <td>Resolved</td>
+                            <td>I receive error messages that are difficult to understand, making it hard for me to know
+                                what went wrong and how to fix it.</td>
+                            <td>
+                                <button disabled class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Menna Mohamed</td>
+                            <td>Unesolved</td>
+                            <td>I'm having trouble submitting forms or completing a transaction, even when I fill in all
+                                the required information./td>
+                            <td>
+                                <button class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Ahmed Hossam</td>
+                            <td>Resolved</td>
+                            <td>The app or website is not displaying all the necessary details or information I need to
+                                complete a task.</td>
+                            <td>
+                                <button disabled class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                            </td>
+                        </tr>
+                        <td>8</td>
+                        <td>Reem Mahmoud</td>
+                        <td>Resolved</td>
+                        <td> I'm experiencing issues when trying to make a payment, such as declined transactions or
+                            incorrect charges.</td>
+                        <td>
+                            <button disabled class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                        </td>
+                        </tr>
+                        <td>9</td>
+                        <td>Karim Gohary</td>
+                        <td>Unresolved</td>
+                        <td>The app keeps crashing or freezing, causing me to lose my progress or unable to use it
+                            properly.</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                        </td>
+                        </tr>
+                        <td>10</td>
+                        <td>Marina Mamdouh</td>
+                        <td>Unresolved</td>
+                        <td> The app or website is displaying incorrect or outdated account information, leading to
+                            confusion and inaccuracies in my records.</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                        </td>
+                        </tr>
+                        <td>11</td>
+                        <td>Julia Magdy</td>
+                        <td>Resolved</td>
+                        <td> I have lost important data or information stored within the app or website, such as my
+                            saved files, photos, or documents.</td>
+                        <td>
+                            <button disabled class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                        </td>
+                        </tr>
+                        <td>12</td>
+                        <td>Mohamed Ahmed</td>
+                        <td>Unresolved</td>
+                        <td>When I reach out for help or have a question, it is challenging to get in touch with
+                            customer support, and their responses are not helpful or timely.</td>
+                        <td>
+                            <button class="btn btn-primary btn-sm" onclick="onClick(this)">Resolve</button>
+                        </td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section Begin -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="./index.html"><img src="img/FOMSY__2_-removebg-preview.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-sm-6">
+                    <div class="footer__widget">
+                        <h5>Socials</h5>
+                        <div class="footer__widget footer__widget--social">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i> Skype</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
+                    <div class="footer__widget footer__widget--address">
+                        <h5>Open Hours</h5>
+                        <p>We work all days a week, Please contact us for any inquiry.</p>
+                        <ul>
+                            <li>Sunday - Thursday: 11:00 am - 8:00 pm</li>
+                            <li>Friday: 10:00 am - 6:00 pm</li>
+                            <li>Saturday: 11:00 am - 6:00 pm</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <ul class="footer__copyright__links">
+                            <li><a href="term.html">Terms of use</a></li>
+                            <li><a href="cookie.html">Cookie Policy</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        <div class="footer__copyright__text">
+                        </div>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="js/adminReport.js"></script>
+
+
 </body>
+
 </html>
