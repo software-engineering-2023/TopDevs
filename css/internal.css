@@ -33,6 +33,7 @@
 
   .contact-form input[type="text"],
   .contact-form input[type="number"],
+  .contact-form input[type="password"],
   .contact-form select,
   .contact-form textarea {
     width: 100%;

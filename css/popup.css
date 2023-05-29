@@ -32,3 +32,9 @@
 .closeButton {
     margin-top: 10px;
 }
+
+
+.cross:hover{
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+}

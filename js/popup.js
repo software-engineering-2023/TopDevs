@@ -9,6 +9,7 @@ function popup(popupDivId) {
 }
 
 function popoff(popupDivId){
+    console.log('Popping off');
     var popupDiv = document.getElementById(popupDivId);
     popupDiv.classList.remove("show");
     setTimeout(function () {
