@@ -18,65 +18,178 @@
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/internal.css" type="text/css">
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link href="../assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/libs/css/style.css">
+  <link rel="stylesheet" href="../assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+
 
 </head>
 
 <body>
 
-  <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="header__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                </div>
-            </div>
-            <div class="col-lg-9">
-                <div class="header__nav">
-                    <nav class="header__menu">
-                        <ul>
-                            <li class="active">
-                                <a href="./index.html">Home</a>
+    <div class="dashboard-header" style="position: relative; height: 5px;">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top">
+            <a class="navbar-brand" href="../home.html"><img src="img/FOMSY__2_-removebg-preview.png" alt="" width="23%"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " style="display: flex; align-items: center; justify-content: center;" id="navbarSupportedContent">
+                <ul style="align-items: center;" class="navbar-nav ml-auto navbar-right-top header__nav">
+                    <div style="display: flex; width: 700px; justify-content: space-between; margin-right: 5em;">
+                        <li class="">
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li class="">
+                            <a href="./cards.html">Cards</a>
+                        </li>
+                        <li class="">
+                            <a href="./Loans.html">Loans</a>
+                        </li>
+                        <li class="">
+                            <a href="./bankAccounts.html">Accounts</a>
+                        </li>
+    
+                        <li class="">
+                            <a href="./contact.html">Contact</a>
+                        </li>
+                    </div>
+
+
+
+                    <li class="nav-item dropdown notification">
+                        <a class="nav-link nav-icons" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><i class="fas fa-fw fa-bell"></i> <span
+                                class="indicator"></span></a>
+                        <ul class="dropdown-menu dropdown-menu-right notification-dropdown">
+                            <li>
+                                <div class="notification-title"> Notification</div>
+                                <div class="notification-list">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item list-group-item-action active">
+                                            <div class="notification-info">
+                                                <div class="notification-list-user-img"><img
+                                                        src="../assets/images/avatar-2.jpg" alt=""
+                                                        class="user-avatar-md rounded-circle"></div>
+                                                <div class="notification-list-user-block"><span
+                                                        class="notification-list-user-name">Technical Issue:</span>your technichal issue with ID 54781 has been resolved
+                                                    <div class="notification-date">2 min ago</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info">
+                                                <div class="notification-list-user-img"><img
+                                                        src="../assets/images/avatar-3.jpg" alt=""
+                                                        class="user-avatar-md rounded-circle"></div>
+                                                <div class="notification-list-user-block"><span
+                                                        class="notification-list-user-name">Bill Payment:</span>your water bill is due in 2 days!!
+                                                    <div class="notification-date">30 mins ago</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info">
+                                                <div class="notification-list-user-img"><img
+                                                        src="../assets/images/avatar-4.jpg" alt=""
+                                                        class="user-avatar-md rounded-circle"></div>
+                                                <div class="notification-list-user-block"><span
+                                                        class="notification-list-user-name">Credit Card:</span>you have a due amount of 7,000 EGP to be paid before 1/6/2023
+                                                    <div class="notification-date">1 hr ago</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info">
+                                                <div class="notification-list-user-img"><img
+                                                        src="../assets/images/avatar-5.jpg" alt=""
+                                                        class="user-avatar-md rounded-circle"></div>
+                                                <div class="notification-list-user-block"><span
+                                                        class="notification-list-user-name">Bank Announcements:</span>We are opening a new branch in Smart Village
+                                                    <div class="notification-date">5 days ago</div>
+                                                </div>
+                                            </div>
+                                        </a>
+
+                                        <a href="#" class="list-group-item list-group-item-action">
+                                            <div class="notification-info">
+                                                <div class="notification-list-user-img"><img
+                                                        src="../assets/images/avatar-5.jpg" alt=""
+                                                        class="user-avatar-md rounded-circle"></div>
+                                                <div class="notification-list-user-block"><span
+                                                        class="notification-list-user-name">Loan:</span>loan installment is due in one week. Do not forget to pay to not have extra fees. 
+                                                    <div class="notification-date">5 days ago</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown connection">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"> <i class="fas fa-fw fa-th"></i> </a>
+                        <ul class="dropdown-menu dropdown-menu-right connection-dropdown">
+                            <li class="connection-list">
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img src="../assets/images/github.png"
+                                                alt=""> <span>Github</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img src="../assets/images/dribbble.png"
+                                                alt=""> <span>Dribbble</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img src="../assets/images/dropbox.png"
+                                                alt=""> <span>Dropbox</span></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img src="../assets/images/bitbucket.png"
+                                                alt=""> <span>Bitbucket</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img src="../assets/images/mail_chimp.png"
+                                                alt=""><span>Mail chimp</span></a>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 ">
+                                        <a href="#" class="connection-item"><img src="../assets/images/slack.png"
+                                                alt=""> <span>Slack</span></a>
+                                    </div>
+                                </div>
                             </li>
                             <li>
-                                <a href="./about.html">About</a>
-                            </li>
-                            <li>
-                                <a href="./services.html">Services</a>
-                            </li>
-                            <li>
-                                <a href="./blog.html">Blog</a>
-                            </li>
-                            <li>
-                                <a href="#">Pages</a>
-                                <ul class="dropdown">
-                                    <li>
-                                        <a href="./services.html">Features</a>
-                                    </li>
-                                    <li>
-                                        <a href="./services-details.html">Services Details</a>
-                                    </li>
-                                    <li>
-                                        <a href="./blog-details.html">Blog Details</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="./contact.html">Contact</a>
+                                <div class="conntection-footer"><a href="#">More</a></div>
                             </li>
                         </ul>
-                    </nav>
-                    <div class="header__search">
-                        <i class="fa fa-search search-switch"></i>
-                    </div>
-                </div>
+                    </li>
+                    <li class="nav-item dropdown nav-user">
+                        <a class="nav-link nav-user-img" href="#" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false"><img src="../assets/images/avatar-1.jpg" alt=""
+                                class="user-avatar-md rounded-circle"></a>
+                        <div class="dropdown-menu dropdown-menu-right nav-user-dropdown"
+                            aria-labelledby="navbarDropdownMenuLink2">
+                            <div class="nav-user-info">
+                                <h5 class="mb-0 text-white nav-user-name">John Abraham</h5>
+                                <span class="status"></span><span class="ml-2">Available</span>
+                            </div>
+                            <a class="dropdown-item" href="#"><i class="fas fa-user mr-2"></i>Account</a>
+                            <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>Setting</a>
+                            <a class="dropdown-item" href="login2.html"><i class="fas fa-power-off mr-2"></i>Logout</a>
+                        </div>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="canvas__open">
-            <span class="fa fa-bars"></span>
-        </div>
+        </nav>
     </div>
-</header>
 
 <br>
 <br>
@@ -205,6 +318,11 @@
 
 
   <script src="js/internal.js"></script>
+  <!-- Optional JavaScript -->
+  <script src="../assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+  <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="../assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+  <script src="../assets/libs/js/main-js.js"></script>
 
 
 </body>
