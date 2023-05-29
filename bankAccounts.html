@@ -26,6 +26,8 @@
 </head>
 
 <body>
+    <button id="backButton" onclick="goBack()">Back</button>
+
 
 
     <!-- Header Section Begin -->
@@ -33,8 +35,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
+                    <img src="img/FOMSY__2_-removebg-preview.png" alt="" width="200"
+                            height="150">
+                    <a href="./index.html"></a>
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <!-- <a href="./index.html"><img src="img/FOMSY__2_-removebg-preview.png" alt="" width="200" height="150">-->
+                        </a>
                     </div>
                 </div>
                 <div class="col-lg-9">
@@ -112,9 +118,9 @@
                                 plus access to cash in 200+ countries.
                             </p>
                             <button style="width: 100%; margin-bottom: 12px;" class="outline-btn"
-                                onclick="onRegBtn()">View Details</button>
+                                onclick="location.href='current.html';">View Details</button>
 
-                            <button style="width: 100%" class="site-btn" onclick="">APPLY NOW</button>
+                            <button style="width: 100%" class="site-btn" onclick="location.href='current.html';">APPLY NOW</button>
 
                         </div>
                     </div>
@@ -127,15 +133,15 @@
                                 whilst offering you the freedom to make banking transactions at no cost.
                             </p>
                             <button style="width: 100%; margin-bottom: 12px;" class="outline-btn"
-                                onclick="onRegBtn()">View Details</button>
+                                onclick="location.href='savings.html';">View Details</button>
 
-                            <button style="width: 100%" class="site-btn" onclick="">APPLY NOW</button>
+                            <button style="width: 100%" class="site-btn" onclick="location.href='savings.html';">APPLY NOW</button>
 
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="testimonial__item">
-                            <img style="margin-top: 20px;" src="img/current-account-1.jpg">
+                            <img style="margin-top: 20px;" src="img/student-account.png">
                             <h5>Students Accounts</h5>
                             <span>Banking Made Simple.</span>
                             <p>Experience the ease and convenience of banking with our Students Account.
@@ -160,9 +166,11 @@
         <div style="padding-bottom: 30px; background-color: whitesmoke;">
             <h3 style=" font-weight: bolder; text-align: center; margin-top: 20px; padding: 10px 20px;"> FAQs</h3>
 
-            <div id="firstQuestion" class = "questionDiv">
+            <div id="firstQuestion" class="questionDiv">
                 <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px 0px;">
-                    <button id="b1" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'Non-residents can open Savings Account with the bank. As per guidelines issued by The Central Bank of EGY, GCC nationals are allowed to open Current Account.')">I am not a
+                    <button id="b1" class="faq_button" aria-expanded="false"
+                        onclick="toggleExpansion(this, 'Non-residents can open Savings Account with the bank. As per guidelines issued by The Central Bank of EGY, GCC nationals are allowed to open Current Account.')">I
+                        am not a
                         resident of
                         Egypt. Can I open an account with the Bank?
                         <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
@@ -175,9 +183,11 @@
                 </span>
             </div>
 
-            <div id="secondQuestion" class = "questionDiv">
+            <div id="secondQuestion" class="questionDiv">
                 <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px;">
-                    <button id="b2" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'For transaction details please login to Mashreq Online or Mashreq Mobile or you can contact us on +9714-424-4444')">How do I
+                    <button id="b2" class="faq_button" aria-expanded="false"
+                        onclick="toggleExpansion(this, 'For transaction details please login to FOMSY Bank online or FOMSY Mobile or you can contact us on 19199')">How
+                        do I
                         enquire about transaction details?
                         <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
                             class="Accordion_accordionIcon__4Khtb">
@@ -189,9 +199,11 @@
                 </span>
             </div>
 
-            <div id="thirdQuestion" class = "questionDiv">
+            <div id="thirdQuestion" class="questionDiv">
                 <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px;">
-                    <button id="b3" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'Yes, with Online Banking, you have access to your account information and transactions at any time it is convenient for you.')">Can I keep
+                    <button id="b3" class="faq_button" aria-expanded="false"
+                        onclick="toggleExpansion(this, 'Yes, with Online Banking, you have access to your account information and transactions at any time it is convenient for you.')">Can
+                        I keep
                         track of my transactions at any time?
                         <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
                             class="Accordion_accordionIcon__4Khtb">
@@ -203,9 +215,11 @@
                 </span>
             </div>
 
-            <div id="fourthQuestion" class = "questionDiv">
+            <div id="fourthQuestion" class="questionDiv">
                 <span class="Accordion_accordionButtonContent__2UNtF" tabindex="-1" style="padding: 0px;">
-                    <button id="b4" class="faq_button" aria-expanded="false" onclick="toggleExpansion(this, 'Yes. Thanks to the convenience of Debit Cards, Online Banking, Bill Payments, Automatic Transfers, everyday banking activities can be performed on your own time and convenience.')">Can I do all of my banking with you?
+                    <button id="b4" class="faq_button" aria-expanded="false"
+                        onclick="toggleExpansion(this, 'Yes. Thanks to the convenience of Debit Cards, Online Banking, Bill Payments, Automatic Transfers, everyday banking activities can be performed on your own time and convenience.')">Can
+                        I do all of my banking with you?
                         <svg width="1em" height="1em" viewBox="0 0 32 32" fill="currentColor"
                             class="Accordion_accordionIcon__4Khtb">
                             <path
@@ -217,13 +231,13 @@
             </div>
         </div>
 
-        </div>
+    </div>
 
-   
+
 
 
     </div>
-     <!-- End of Questions Part -->
+    <!-- End of Questions Part -->
 
     <!-- Footer Section Begin -->
     <footer class="footer">
@@ -232,10 +246,8 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="./index.html"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="./index.html"><img src="img/FOMSY__2_-removebg-preview.png" alt=""></a>
                         </div>
-                        <p>Please remember though that how far you go is up to you. There is no substitute for your own
-                            work and effort in succeeding in this business.</p>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -243,10 +255,10 @@
                         <h5>Services</h5>
                         <div class="footer__widget">
                             <ul>
-                                <li><a href="#">Personal Loans</a></li>
-                                <li><a href="#">Business Loans</a></li>
-                                <li><a href="#">Online Cash Loans</a></li>
-                                <li><a href="#">Cash Advance</a></li>
+                                <li><a href="#">Applyy for a loan</a></li>
+                                <li><a href="#">Apply for a credit card </a></li>
+                                <li><a href="#">Pay online bills </a></li>
+                                <li><a href="#">Cash Transfer</a></li>
                             </ul>
                         </div>
                     </div>
@@ -269,9 +281,9 @@
                         <h5>Open Hours</h5>
                         <p>We work all days a week, Please contact us for any inquiry.</p>
                         <ul>
-                            <li>Monday - Friday: 11:00 am - 8:00 pm</li>
-                            <li>Saturday: 10:00 am - 6:00 pm</li>
-                            <li>Sunday: 11:00 am - 6:00 pm</li>
+                            <li>Sunday - Thursday: 11:00 am - 8:00 pm</li>
+                            <li>Friday: 10:00 am - 6:00 pm</li>
+                            <li>Saturday: 11:00 am - 6:00 pm</li>
                         </ul>
                     </div>
                 </div>
@@ -280,19 +292,14 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <ul class="footer__copyright__links">
-                            <li><a href="#">Terms of use</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Community</a></li>
+                            <li><a href="term.html">Terms of use</a></li>
+                            <li><a href="cookie.html">Cookie Policy</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                         <div class="footer__copyright__text">
-                            <p>Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                                template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-                                    href="https://colorlib.com" target="_blank">Colorlib</a>
-                            </p>
                         </div>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
