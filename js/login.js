@@ -32,3 +32,12 @@ function onLogin() {
     }
 }
 
+function handleUsernameInput(input) {
+    const usernameLabel = document.getElementById("username-label");
+    if (input.value.length > 0) {
+        usernameLabel.style.display = "none";
+    } else {
+        usernameLabel.style.display = "block";
+    }
+}
+
